@@ -1,6 +1,6 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {RepositoriesScreen} from '../screens';
+import {RepositoriesScreen, PullRequestsScreen} from '../screens';
 import {withSafeArea} from '../components';
 
 const AppStack = createStackNavigator();
@@ -19,6 +19,14 @@ export const AppNavigator = () => {
             //   shadowColor: 'transparent',
           },
         }}
+      />
+      <AppStack.Screen
+        name="Pull Requests"
+        component={withSafeArea(PullRequestsScreen, {
+          top: 'never',
+          bottom: 'always',
+        })}
+        options={{headerBackTitleVisible: false}}
       />
     </AppStack.Navigator>
   );

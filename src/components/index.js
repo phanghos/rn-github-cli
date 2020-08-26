@@ -6,3 +6,4 @@ export * from './LabelList';
 export * from './Page';
 export * from './WithSafeArea';
 export * from './Separator';
+export * from './PullRequest';
