@@ -1,7 +1,7 @@
 import React from 'react';
-import {View} from 'react-native';
+import { View } from 'react-native';
 import PropTypes from 'prop-types';
-import {Text} from './Text';
+import { Text } from './Text';
 
 const bgColorMap = {
   code: 'rgba(0, 128, 255, 0.2)',
@@ -13,7 +13,7 @@ const textColorMap = {
   success: '#2E8B57',
 };
 
-export const CodeSnippet = ({children, type, style}) => {
+export const CodeSnippet = ({ children, type, style }) => {
   return (
     <View
       style={[
@@ -27,7 +27,7 @@ export const CodeSnippet = ({children, type, style}) => {
         style,
       ]}>
       <Text
-        style={{color: textColorMap[type]}}
+        style={{ color: textColorMap[type] }}
         fontFamily={type === 'code' ? 'SourceCodePro-Regular' : undefined}
         fontWeight="400">
         {children}

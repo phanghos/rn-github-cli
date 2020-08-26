@@ -1,7 +1,7 @@
-import React, {useState, useCallback, useRef, useEffect} from 'react';
-import {TextInput} from 'react-native';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
+import { TextInput } from 'react-native';
 
-export const SearchBar = ({onSubmit}) => {
+export const SearchBar = ({ onSubmit }) => {
   const [value, setValue] = useState('');
   const inputRef = useRef();
 
@@ -9,7 +9,7 @@ export const SearchBar = ({onSubmit}) => {
     inputRef.current.focus();
   }, []);
 
-  const onSubmitEditting = useCallback(({nativeEvent}) => {
+  const onSubmitEditting = useCallback(({ nativeEvent }) => {
     onSubmit(nativeEvent.text);
   }, []);
 
@@ -18,7 +18,7 @@ export const SearchBar = ({onSubmit}) => {
       ref={inputRef}
       value={value}
       placeholder="Type something here..."
-      onChangeText={(text) =>
+      onChangeText={text =>
         setValue(text.slice(0, 1).toLowerCase() + text.slice(1))
       }
       onSubmitEditing={onSubmitEditting}

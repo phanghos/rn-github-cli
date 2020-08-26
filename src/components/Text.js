@@ -1,10 +1,10 @@
 import React from 'react';
-import {Text as RNText} from 'react-native';
+import { Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
 
-export const Text = ({children, fontFamily, fontWeight, style}) => {
+export const Text = ({ children, fontFamily, fontWeight, style }) => {
   return children ? (
-    <RNText style={[{fontFamily, fontWeight}, style]}>{children}</RNText>
+    <RNText style={[{ fontFamily, fontWeight }, style]}>{children}</RNText>
   ) : null;
 };
 

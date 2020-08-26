@@ -15,8 +15,8 @@ class ApiService {
     });
   }
 
-  fetchUserRepositories = (user) =>
-    Axios.get(`${baseUrl}/users/${user}/repos`, {params: {type: 'all'}});
+  fetchUserRepositories = user =>
+    Axios.get(`${baseUrl}/users/${user}/repos`, { params: { type: 'all' } });
 
   fetchCommits = (user, repo) =>
     Axios.get(`${baseUrl}/repos/${user}/${repo}/commits`);
@@ -24,10 +24,10 @@ class ApiService {
   fetchPullRequests = (user, repo) =>
     Axios.get(`${baseUrl}/repos/${user}/${repo}/pulls`);
 
-  searchRepositories = (query) =>
-    axios.get(endpoints.searchRepositories, {params: {q: query}});
+  searchRepositories = query =>
+    axios.get(endpoints.searchRepositories, { params: { q: query } });
 
-  fetchPullRequest = (url) => Axios.get(url);
+  fetchPullRequest = url => Axios.get(url);
 }
 
 export const apiService = new ApiService();

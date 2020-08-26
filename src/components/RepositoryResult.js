@@ -1,9 +1,9 @@
-import React, {useCallback} from 'react';
-import {TouchableOpacity, View, Image} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import React, { useCallback } from 'react';
+import { TouchableOpacity, View, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import numbro from 'numbro';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {Text} from './Text';
+import { Text } from './Text';
 const languageColors = require('../utils/languageColors.json');
 
 export const RepositoryResult = ({
@@ -11,7 +11,7 @@ export const RepositoryResult = ({
   description,
   watchers,
   language,
-  owner: {login: username, avatar_url: avatarUrl},
+  owner: { login: username, avatar_url: avatarUrl },
 }) => {
   const navigation = useNavigation();
 
@@ -27,9 +27,9 @@ export const RepositoryResult = ({
           paddingVertical: 24,
           backgroundColor: '#fff',
         }}>
-        <View style={{flexDirection: 'row', marginBottom: 4}}>
+        <View style={{ flexDirection: 'row', marginBottom: 4 }}>
           <Image
-            source={{uri: avatarUrl}}
+            source={{ uri: avatarUrl }}
             style={{
               width: 18,
               height: 18,
@@ -40,11 +40,11 @@ export const RepositoryResult = ({
           />
           <Text fontWeight="300">{username}</Text>
         </View>
-        <Text style={{marginBottom: 4}} fontWeight="500">
+        <Text style={{ marginBottom: 4 }} fontWeight="500">
           {name}
         </Text>
         <Text fontWeight="300">{description}</Text>
-        <View style={{flexDirection: 'row', marginTop: 16}}>
+        <View style={{ flexDirection: 'row', marginTop: 16 }}>
           <View
             style={{
               flexDirection: 'row',
@@ -55,7 +55,7 @@ export const RepositoryResult = ({
               name="star"
               size={16}
               color="#FFC30B"
-              style={{marginRight: 8}}
+              style={{ marginRight: 8 }}
             />
             <Text fontWeight="300">
               {numbro(watchers).format({

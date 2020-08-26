@@ -1,14 +1,14 @@
-import React, {useCallback} from 'react';
-import {TouchableOpacity, View} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
-import {Text} from './Text';
-import {LabelList} from './LabelList';
+import React, { useCallback } from 'react';
+import { TouchableOpacity, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { Text } from './Text';
+import { LabelList } from './LabelList';
 
 export const PullRequest = ({
   head: {
-    repo: {name},
+    repo: { name },
   },
-  user: {login: username},
+  user: { login: username },
   number,
   title,
   labels = [],
@@ -16,7 +16,7 @@ export const PullRequest = ({
   const navigation = useNavigation();
 
   const onPress = useCallback(() => {
-    navigation.navigate('Pull Request', {url: ''});
+    navigation.navigate('Pull Request', { url: '' });
   }, [navigation]);
 
   return (
@@ -35,7 +35,7 @@ export const PullRequest = ({
           }}
           fontWeight="200">{`${username} / ${name} #${number}`}</Text>
         <Text
-          style={{marginBottom: labels.length > 0 ? 8 : 0}}
+          style={{ marginBottom: labels.length > 0 ? 8 : 0 }}
           fontWeight="400">
           {title}
         </Text>

@@ -1,7 +1,7 @@
-import React, {useCallback} from 'react';
-import {FlatList, View} from 'react-native';
-import {Comment} from './Comment';
-import {Separator} from './Separator';
+import React, { useCallback } from 'react';
+import { FlatList, View } from 'react-native';
+import { Comment } from './Comment';
+import { Separator } from './Separator';
 
 const keyExtractor = (_, index) => index.toString();
 
@@ -13,8 +13,8 @@ const ItemSeparator = () => (
   </View>
 );
 
-export const CommentList = ({comments}) => {
-  const renderItem = useCallback(({item}) => {
+export const CommentList = ({ comments }) => {
+  const renderItem = useCallback(({ item }) => {
     return (
       <View
         style={{

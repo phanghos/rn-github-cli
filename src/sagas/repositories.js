@@ -1,11 +1,11 @@
-import {takeEvery, call, put, delay} from 'redux-saga/effects';
+import { takeEvery, call, put, delay } from 'redux-saga/effects';
 import {
   REPOS_REQUEST,
   REPOS_SUCCESS,
   REPOS_SEARCH_REQUEST,
   REPOS_SEARCH_SUCCESS,
 } from '../actions/repositories';
-import {apiService} from '../api/ApiService';
+import { apiService } from '../api/ApiService';
 
 const repoMock = require('./repositoriesMock.json');
 const repoSearchMock = require('./repoSearchMock.json');
@@ -18,7 +18,7 @@ function* getUserRepositories(action) {
     // );
     // yield put({type: REPOS_SUCCESS, payload: {repositories: response.data}});
     yield delay(1500);
-    yield put({type: REPOS_SUCCESS, payload: {repositories: repoMock}});
+    yield put({ type: REPOS_SUCCESS, payload: { repositories: repoMock } });
   } catch (error) {
     console.log('Error', error);
   }
@@ -37,7 +37,7 @@ function* searchRepositories(action) {
     yield delay(1500);
     yield put({
       type: REPOS_SEARCH_SUCCESS,
-      payload: {repositories: repoSearchMock.items},
+      payload: { repositories: repoSearchMock.items },
     });
   } catch (error) {
     console.log('Error', error);

@@ -1,8 +1,8 @@
 import React from 'react';
-import {View} from 'react-native';
-import {Text} from './Text';
+import { View } from 'react-native';
+import { Text } from './Text';
 
-export const Label = ({color, text, style}) => {
+export const Label = ({ color, text, style }) => {
   return (
     <View
       style={[

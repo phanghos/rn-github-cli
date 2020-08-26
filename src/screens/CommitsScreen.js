@@ -1,16 +1,16 @@
-import React, {useEffect, useState} from 'react';
-import {View, Image, FlatList} from 'react-native';
-import {apiService} from '../api/ApiService';
-import {Spinner, Text} from '../components';
+import React, { useEffect, useState } from 'react';
+import { View, Image, FlatList } from 'react-native';
+import { apiService } from '../api/ApiService';
+import { Spinner, Text } from '../components';
 const mockJson = require('../sagas/commitsMock.json');
 
-const renderItem = ({item}) => {
+const renderItem = ({ item }) => {
   const {
     commit: {
       message,
-      author: {name: username},
+      author: { name: username },
     },
-    author: {avatar_url: avatarUrl},
+    author: { avatar_url: avatarUrl },
   } = item;
   return (
     <View
@@ -19,12 +19,12 @@ const renderItem = ({item}) => {
         paddingVertical: 12,
         backgroundColor: '#fff',
       }}>
-      <Text numberOfLines={1} style={{marginBottom: 4}}>
+      <Text numberOfLines={1} style={{ marginBottom: 4 }}>
         {message}
       </Text>
-      <View style={{flexDirection: 'row'}}>
+      <View style={{ flexDirection: 'row' }}>
         <Image
-          source={{uri: avatarUrl}}
+          source={{ uri: avatarUrl }}
           style={{
             width: 15,
             height: 15,
@@ -35,7 +35,7 @@ const renderItem = ({item}) => {
         />
         <Text fontWeight="500">
           {username}
-          <Text style={{color: '#696969', fontWeight: 'normal'}}>
+          <Text style={{ color: '#696969', fontWeight: 'normal' }}>
             {' '}
             authored
           </Text>

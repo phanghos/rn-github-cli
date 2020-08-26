@@ -1,12 +1,12 @@
-import React, {useCallback} from 'react';
-import {View, Image} from 'react-native';
-import {Text} from './Text';
-import {useNavigation} from '@react-navigation/native';
-import {TouchableOpacity} from 'react-native';
+import React, { useCallback } from 'react';
+import { View, Image } from 'react-native';
+import { Text } from './Text';
+import { useNavigation } from '@react-navigation/native';
+import { TouchableOpacity } from 'react-native';
 
 export const Repository = ({
   name,
-  owner: {login: username, avatar_url: avatarUrl},
+  owner: { login: username, avatar_url: avatarUrl },
 }) => {
   const navigation = useNavigation();
 
@@ -22,9 +22,9 @@ export const Repository = ({
           paddingVertical: 24,
           backgroundColor: '#fff',
         }}>
-        <View style={{flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row' }}>
           <Image
-            source={{uri: avatarUrl}}
+            source={{ uri: avatarUrl }}
             style={{
               width: 35,
               height: 35,
@@ -34,10 +34,10 @@ export const Repository = ({
             }}
           />
           <View>
-            <Text style={{marginBottom: 4}} fontWeight="200">
+            <Text style={{ marginBottom: 4 }} fontWeight="200">
               {username}
             </Text>
-            <Text style={{marginRight: 24}} fontWeight="400">
+            <Text style={{ marginRight: 24 }} fontWeight="400">
               {name}
             </Text>
           </View>

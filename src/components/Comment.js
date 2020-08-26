@@ -1,8 +1,8 @@
 import React from 'react';
-import {View, Image, ScrollView} from 'react-native';
+import { View, Image, ScrollView } from 'react-native';
 import Markdown from 'react-native-markdown-display';
 import moment from 'moment';
-import {Text} from '../components';
+import { Text } from '../components';
 
 const rules = {
   table: (node, children, parent, styles) => (
@@ -24,14 +24,14 @@ const rules = {
   thead: (node, children, parent, styles) => (
     <View
       key={node.key}
-      style={[styles.thead, {flex: 1, alignSelf: 'stretch'}]}>
+      style={[styles.thead, { flex: 1, alignSelf: 'stretch' }]}>
       {children}
     </View>
   ),
   tbody: (node, children, parent, styles) => (
     <View
       key={node.key}
-      style={[styles.tbody, {flex: 1, alignSelf: 'stretch'}]}>
+      style={[styles.tbody, { flex: 1, alignSelf: 'stretch' }]}>
       {children}
     </View>
   ),
@@ -85,15 +85,15 @@ const rules = {
 };
 
 export const Comment = ({
-  user: {login: username, avatar_url: avatarUrl},
+  user: { login: username, avatar_url: avatarUrl },
   created_at: createdAt,
   body,
 }) => {
   return (
-    <View style={{padding: 16, backgroundColor: '#fff'}}>
-      <View style={{flexDirection: 'row'}}>
+    <View style={{ padding: 16, backgroundColor: '#fff' }}>
+      <View style={{ flexDirection: 'row' }}>
         <Image
-          source={{uri: avatarUrl}}
+          source={{ uri: avatarUrl }}
           style={{
             width: 35,
             height: 35,
@@ -103,10 +103,10 @@ export const Comment = ({
           }}
         />
         <View>
-          <Text style={{marginBottom: 2}} fontWeight="500">
+          <Text style={{ marginBottom: 2 }} fontWeight="500">
             {username}
           </Text>
-          <Text style={{fontSize: 12}} fontWeight="300">
+          <Text style={{ fontSize: 12 }} fontWeight="300">
             {moment(createdAt).fromNow()}
           </Text>
         </View>
@@ -114,10 +114,10 @@ export const Comment = ({
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <Markdown
           style={{
-            link: {color: '#0080FF'},
-            heading2: {fontWeight: 'bold', marginVertical: 12},
+            link: { color: '#0080FF' },
+            heading2: { fontWeight: 'bold', marginVertical: 12 },
             // text: {fontWeight: '300'},
-            table: {marginVertical: 16},
+            table: { marginVertical: 16 },
           }}
           rules={rules}>
           {body}

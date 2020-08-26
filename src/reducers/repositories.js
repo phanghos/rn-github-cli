@@ -13,7 +13,7 @@ const initialState = {
 export const repositoriesReducer = (state = initialState, action) => {
   switch (action.type) {
     case REPOS_REQUEST:
-      return {...state, isLoading: true};
+      return { ...state, isLoading: true };
     case REPOS_SUCCESS:
       return {
         ...state,
@@ -28,7 +28,7 @@ export const repositoriesReducer = (state = initialState, action) => {
 export const repoSearchReducer = (state = initialState, action) => {
   switch (action.type) {
     case REPOS_SEARCH_REQUEST:
-      return {...state, isLoading: true};
+      return { ...state, isLoading: true };
     case REPOS_SEARCH_SUCCESS:
       return {
         ...state,

@@ -1,17 +1,17 @@
-import React, {useEffect, useState} from 'react';
-import {FlatList, View} from 'react-native';
-import {apiService} from '../api/ApiService';
-import {PullRequest, Spinner} from '../components';
+import React, { useEffect, useState } from 'react';
+import { FlatList, View } from 'react-native';
+import { apiService } from '../api/ApiService';
+import { PullRequest, Spinner } from '../components';
 const mockJson = require('../sagas/pullRequestsMock.json');
 
-const renderItem = ({item}) => {
+const renderItem = ({ item }) => {
   return <PullRequest {...item} />;
 };
 
 const keyExtractor = (_, index) => index.toString();
 
 const Separator = () => (
-  <View style={{height: 1, backgroundColor: '#f5f6f7'}} />
+  <View style={{ height: 1, backgroundColor: '#f5f6f7' }} />
 );
 
 export const PullRequestsScreen = () => {
