@@ -1,0 +1,2 @@
+export const REPOS_REQUEST = 'REPOS_REQUEST';
+export const REPOS_SUCCESS = 'REPOS_SUCCESS';
