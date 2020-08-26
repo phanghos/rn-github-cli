@@ -4,6 +4,7 @@ import {
   RepositoriesScreen,
   CommitsScreen,
   PullRequestsScreen,
+  PullRequestScreen,
 } from '../screens';
 import {withSafeArea} from '../components';
 
@@ -35,6 +36,11 @@ export const AppNavigator = () => {
           top: 'never',
           bottom: 'always',
         })}
+        options={{headerBackTitleVisible: false}}
+      />
+      <AppStack.Screen
+        name="Pull Request"
+        component={withSafeArea(PullRequestScreen, {bottom: 'always'})}
         options={{headerBackTitleVisible: false}}
       />
     </AppStack.Navigator>
