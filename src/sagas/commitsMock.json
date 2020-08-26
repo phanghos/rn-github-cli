@@ -1,0 +1,1049 @@
+[
+  {
+    "sha": "d34428f7cc008c8fa30d9fd5430b2288f56c4327",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOmQzNDQyOGY3Y2MwMDhjOGZhMzBkOWZkNTQzMGIyMjg4ZjU2YzQzMjc=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:55:33Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:55:33Z"
+      },
+      "message": "Remove Chuck interceptor and unused dependencies",
+      "tree": {
+        "sha": "3eced2529613ee2ca3f9a9fecd24845fc35c3935",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/3eced2529613ee2ca3f9a9fecd24845fc35c3935"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/d34428f7cc008c8fa30d9fd5430b2288f56c4327",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/d34428f7cc008c8fa30d9fd5430b2288f56c4327",
+    "html_url": "https://github.com/phanghos/chh-test/commit/d34428f7cc008c8fa30d9fd5430b2288f56c4327",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/d34428f7cc008c8fa30d9fd5430b2288f56c4327/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "4eb18bea7d43c75aa187d2d73fdc9a871ac5e34d",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/4eb18bea7d43c75aa187d2d73fdc9a871ac5e34d",
+        "html_url": "https://github.com/phanghos/chh-test/commit/4eb18bea7d43c75aa187d2d73fdc9a871ac5e34d"
+      }
+    ]
+  },
+  {
+    "sha": "4eb18bea7d43c75aa187d2d73fdc9a871ac5e34d",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjRlYjE4YmVhN2Q0M2M3NWFhMTg3ZDJkNzNmZGM5YTg3MWFjNWUzNGQ=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:41:34Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:41:34Z"
+      },
+      "message": "Merge branch 'master' of https://github.com/phanghos/chh-test",
+      "tree": {
+        "sha": "331a326e7755e91b46fa9d9334947c02e520c957",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/331a326e7755e91b46fa9d9334947c02e520c957"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/4eb18bea7d43c75aa187d2d73fdc9a871ac5e34d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/4eb18bea7d43c75aa187d2d73fdc9a871ac5e34d",
+    "html_url": "https://github.com/phanghos/chh-test/commit/4eb18bea7d43c75aa187d2d73fdc9a871ac5e34d",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/4eb18bea7d43c75aa187d2d73fdc9a871ac5e34d/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "97a2a136d50840f04cec7020ee989fc9e059e27f",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/97a2a136d50840f04cec7020ee989fc9e059e27f",
+        "html_url": "https://github.com/phanghos/chh-test/commit/97a2a136d50840f04cec7020ee989fc9e059e27f"
+      },
+      {
+        "sha": "1e9d573be4494c7fb06eb918ecfb563d0ee367fc",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/1e9d573be4494c7fb06eb918ecfb563d0ee367fc",
+        "html_url": "https://github.com/phanghos/chh-test/commit/1e9d573be4494c7fb06eb918ecfb563d0ee367fc"
+      }
+    ]
+  },
+  {
+    "sha": "97a2a136d50840f04cec7020ee989fc9e059e27f",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjk3YTJhMTM2ZDUwODQwZjA0Y2VjNzAyMGVlOTg5ZmM5ZTA1OWUyN2Y=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:40:22Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:40:22Z"
+      },
+      "message": "Add some unit tests",
+      "tree": {
+        "sha": "dbf83421c600cd182f00b0f4c50ffac375360839",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/dbf83421c600cd182f00b0f4c50ffac375360839"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/97a2a136d50840f04cec7020ee989fc9e059e27f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/97a2a136d50840f04cec7020ee989fc9e059e27f",
+    "html_url": "https://github.com/phanghos/chh-test/commit/97a2a136d50840f04cec7020ee989fc9e059e27f",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/97a2a136d50840f04cec7020ee989fc9e059e27f/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "8e6d58d1b1914ec457fff9af2360e81313571742",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/8e6d58d1b1914ec457fff9af2360e81313571742",
+        "html_url": "https://github.com/phanghos/chh-test/commit/8e6d58d1b1914ec457fff9af2360e81313571742"
+      }
+    ]
+  },
+  {
+    "sha": "8e6d58d1b1914ec457fff9af2360e81313571742",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjhlNmQ1OGQxYjE5MTRlYzQ1N2ZmZjlhZjIzNjBlODEzMTM1NzE3NDI=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:40:07Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:40:07Z"
+      },
+      "message": "Implement user portfolio screen",
+      "tree": {
+        "sha": "4200bd071f4de1d2e9021a810ac3b359183c74e4",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/4200bd071f4de1d2e9021a810ac3b359183c74e4"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/8e6d58d1b1914ec457fff9af2360e81313571742",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/8e6d58d1b1914ec457fff9af2360e81313571742",
+    "html_url": "https://github.com/phanghos/chh-test/commit/8e6d58d1b1914ec457fff9af2360e81313571742",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/8e6d58d1b1914ec457fff9af2360e81313571742/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "24ce4d8a8741ff0d3c5d6bbb78f51ea2928a473e",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/24ce4d8a8741ff0d3c5d6bbb78f51ea2928a473e",
+        "html_url": "https://github.com/phanghos/chh-test/commit/24ce4d8a8741ff0d3c5d6bbb78f51ea2928a473e"
+      }
+    ]
+  },
+  {
+    "sha": "1e9d573be4494c7fb06eb918ecfb563d0ee367fc",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjFlOWQ1NzNiZTQ0OTRjN2ZiMDZlYjkxOGVjZmI1NjNkMGVlMzY3ZmM=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "tatasciorecont@gmail.com",
+        "date": "2018-06-14T07:39:40Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2018-06-14T07:39:40Z"
+      },
+      "message": "Update README.md",
+      "tree": {
+        "sha": "161b1accaf53a2036f54f65200f7e86ddd970c26",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/161b1accaf53a2036f54f65200f7e86ddd970c26"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/1e9d573be4494c7fb06eb918ecfb563d0ee367fc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbIhu8CRBK7hj4Ov3rIwAAdHIIADe1djOHemm8ARBgr7IilHUx\nPW3rDlkIUZW3xfIsbrYMRtnK1unczvCS7tayu1nz3q/XGqPWE/x6tEhy4sqZkKhg\ntI4V5TIsWjYbY3TTyQULx13+zmSFXxbtJgvujy9GNmHLa9zLFRhOO+VYm4lNQOPK\nPZhKVH81GgW0JvLtvYx79dm+U8BVgyQktQIzZjn6bRfWTyixW7GXiZFzhTN+3bg1\nmR8qGmA/289usDtLPHrDJ3d0lyCPaRVy/CnGRpiVOHwPvkkOc0VwqH0qLrAticP8\nBg9erruac+t17ibrkBgbyVaaoEz7UCG3KMdbg9kywLqOLbKQDqYPyImbznBfJBk=\n=Nbns\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 161b1accaf53a2036f54f65200f7e86ddd970c26\nparent 05afba0ba7c5a28536a611b950de276750e8b947\nauthor Roberto Tatasciore <tatasciorecont@gmail.com> 1528961980 +0200\ncommitter GitHub <noreply@github.com> 1528961980 +0200\n\nUpdate README.md"
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/1e9d573be4494c7fb06eb918ecfb563d0ee367fc",
+    "html_url": "https://github.com/phanghos/chh-test/commit/1e9d573be4494c7fb06eb918ecfb563d0ee367fc",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/1e9d573be4494c7fb06eb918ecfb563d0ee367fc/comments",
+    "author": {
+      "login": "phanghos",
+      "id": 1209351,
+      "node_id": "MDQ6VXNlcjEyMDkzNTE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1209351?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/phanghos",
+      "html_url": "https://github.com/phanghos",
+      "followers_url": "https://api.github.com/users/phanghos/followers",
+      "following_url": "https://api.github.com/users/phanghos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/phanghos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/phanghos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/phanghos/subscriptions",
+      "organizations_url": "https://api.github.com/users/phanghos/orgs",
+      "repos_url": "https://api.github.com/users/phanghos/repos",
+      "events_url": "https://api.github.com/users/phanghos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/phanghos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "05afba0ba7c5a28536a611b950de276750e8b947",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/05afba0ba7c5a28536a611b950de276750e8b947",
+        "html_url": "https://github.com/phanghos/chh-test/commit/05afba0ba7c5a28536a611b950de276750e8b947"
+      }
+    ]
+  },
+  {
+    "sha": "24ce4d8a8741ff0d3c5d6bbb78f51ea2928a473e",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjI0Y2U0ZDhhODc0MWZmMGQzYzVkNmJiYjc4ZjUxZWEyOTI4YTQ3M2U=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:38:49Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:38:49Z"
+      },
+      "message": "Impement coin details screen",
+      "tree": {
+        "sha": "e797d19d35a8c898ce4f0c961c50b16d7bbe95a6",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/e797d19d35a8c898ce4f0c961c50b16d7bbe95a6"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/24ce4d8a8741ff0d3c5d6bbb78f51ea2928a473e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/24ce4d8a8741ff0d3c5d6bbb78f51ea2928a473e",
+    "html_url": "https://github.com/phanghos/chh-test/commit/24ce4d8a8741ff0d3c5d6bbb78f51ea2928a473e",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/24ce4d8a8741ff0d3c5d6bbb78f51ea2928a473e/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "65a89fcc51709d3ade496380d4699f481e5185d2",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/65a89fcc51709d3ade496380d4699f481e5185d2",
+        "html_url": "https://github.com/phanghos/chh-test/commit/65a89fcc51709d3ade496380d4699f481e5185d2"
+      }
+    ]
+  },
+  {
+    "sha": "65a89fcc51709d3ade496380d4699f481e5185d2",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjY1YTg5ZmNjNTE3MDlkM2FkZTQ5NjM4MGQ0Njk5ZjQ4MWU1MTg1ZDI=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:38:21Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:38:21Z"
+      },
+      "message": "Add repositories, their implementation as well as cloud and disk data sources for a better abstraction",
+      "tree": {
+        "sha": "8df463168907bbb5ee354690d60e7e04ba59fcb1",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/8df463168907bbb5ee354690d60e7e04ba59fcb1"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/65a89fcc51709d3ade496380d4699f481e5185d2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/65a89fcc51709d3ade496380d4699f481e5185d2",
+    "html_url": "https://github.com/phanghos/chh-test/commit/65a89fcc51709d3ade496380d4699f481e5185d2",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/65a89fcc51709d3ade496380d4699f481e5185d2/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "15767c78b19b574c5040bbc56a125cf5cc61d82e",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/15767c78b19b574c5040bbc56a125cf5cc61d82e",
+        "html_url": "https://github.com/phanghos/chh-test/commit/15767c78b19b574c5040bbc56a125cf5cc61d82e"
+      }
+    ]
+  },
+  {
+    "sha": "15767c78b19b574c5040bbc56a125cf5cc61d82e",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjE1NzY3Yzc4YjE5YjU3NGM1MDQwYmJjNTZhMTI1Y2Y1Y2M2MWQ4MmU=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:37:02Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:37:02Z"
+      },
+      "message": "Class now extends Fragment instead of BaseFragment",
+      "tree": {
+        "sha": "e8e58c3dbb9dcb1b8746d3fac3492a47b68ee2a3",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/e8e58c3dbb9dcb1b8746d3fac3492a47b68ee2a3"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/15767c78b19b574c5040bbc56a125cf5cc61d82e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/15767c78b19b574c5040bbc56a125cf5cc61d82e",
+    "html_url": "https://github.com/phanghos/chh-test/commit/15767c78b19b574c5040bbc56a125cf5cc61d82e",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/15767c78b19b574c5040bbc56a125cf5cc61d82e/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "f738f96ffa4d7fc53b69f953d2308815578eb9d3",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/f738f96ffa4d7fc53b69f953d2308815578eb9d3",
+        "html_url": "https://github.com/phanghos/chh-test/commit/f738f96ffa4d7fc53b69f953d2308815578eb9d3"
+      }
+    ]
+  },
+  {
+    "sha": "05afba0ba7c5a28536a611b950de276750e8b947",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjA1YWZiYTBiYTdjNWEyODUzNmE2MTFiOTUwZGUyNzY3NTBlOGI5NDc=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "tatasciorecont@gmail.com",
+        "date": "2018-06-14T07:35:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2018-06-14T07:35:07Z"
+      },
+      "message": "Update README.md",
+      "tree": {
+        "sha": "c28d404da63470a817934d49b39d058fefa02242",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/c28d404da63470a817934d49b39d058fefa02242"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/05afba0ba7c5a28536a611b950de276750e8b947",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbIhqrCRBK7hj4Ov3rIwAAdHIIACckF9WIVAC5CsdPp5lqQ3z/\ndBLwZ3Bg6PhjcG9CX48/Nxbv9aGT+nLlf2Z9j3l2+jYdssM9PxnN4inLkldnCXoN\nJMN0piK72Ge/FXGiFSN/4jtkqbcW+2RmsGYqemwbbrSfkrAZU0hEqCoCY3lZh67t\nGNG7ktlRG7LTHzwou1aIMCc9bMMZ1kUMcdylS3GgjyMotziBPG35Gb0wPJSdZ++E\nbSsIQwS8rBJohAx8GX6DqFbQlPzbO4LhPTKY0/PTuvH7iTyl3tfGnoiwDrQN6Kgb\n+KB6KskDhNJhguwCtNYyZGuiHMk8NN2wLdVIuqchGey8nQi0NFA8xqTAjOWLMjk=\n=MlPc\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c28d404da63470a817934d49b39d058fefa02242\nparent 8ea4a43767607e84bee336756170491d14ab2b3b\nauthor Roberto Tatasciore <tatasciorecont@gmail.com> 1528961707 +0200\ncommitter GitHub <noreply@github.com> 1528961707 +0200\n\nUpdate README.md"
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/05afba0ba7c5a28536a611b950de276750e8b947",
+    "html_url": "https://github.com/phanghos/chh-test/commit/05afba0ba7c5a28536a611b950de276750e8b947",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/05afba0ba7c5a28536a611b950de276750e8b947/comments",
+    "author": {
+      "login": "phanghos",
+      "id": 1209351,
+      "node_id": "MDQ6VXNlcjEyMDkzNTE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1209351?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/phanghos",
+      "html_url": "https://github.com/phanghos",
+      "followers_url": "https://api.github.com/users/phanghos/followers",
+      "following_url": "https://api.github.com/users/phanghos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/phanghos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/phanghos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/phanghos/subscriptions",
+      "organizations_url": "https://api.github.com/users/phanghos/orgs",
+      "repos_url": "https://api.github.com/users/phanghos/repos",
+      "events_url": "https://api.github.com/users/phanghos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/phanghos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8ea4a43767607e84bee336756170491d14ab2b3b",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/8ea4a43767607e84bee336756170491d14ab2b3b",
+        "html_url": "https://github.com/phanghos/chh-test/commit/8ea4a43767607e84bee336756170491d14ab2b3b"
+      }
+    ]
+  },
+  {
+    "sha": "f738f96ffa4d7fc53b69f953d2308815578eb9d3",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOmY3MzhmOTZmZmE0ZDdmYzUzYjY5Zjk1M2QyMzA4ODE1NTc4ZWI5ZDM=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:33:17Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:33:17Z"
+      },
+      "message": "Implement coin list feature (first screen)",
+      "tree": {
+        "sha": "536276e513bea77f16c985726e54f408fc52b2ae",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/536276e513bea77f16c985726e54f408fc52b2ae"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/f738f96ffa4d7fc53b69f953d2308815578eb9d3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/f738f96ffa4d7fc53b69f953d2308815578eb9d3",
+    "html_url": "https://github.com/phanghos/chh-test/commit/f738f96ffa4d7fc53b69f953d2308815578eb9d3",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/f738f96ffa4d7fc53b69f953d2308815578eb9d3/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "07975b04081e29a34cd8f082bac402032443ffd0",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/07975b04081e29a34cd8f082bac402032443ffd0",
+        "html_url": "https://github.com/phanghos/chh-test/commit/07975b04081e29a34cd8f082bac402032443ffd0"
+      }
+    ]
+  },
+  {
+    "sha": "07975b04081e29a34cd8f082bac402032443ffd0",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjA3OTc1YjA0MDgxZTI5YTM0Y2Q4ZjA4MmJhYzQwMjAzMjQ0M2ZmZDA=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:32:14Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:32:14Z"
+      },
+      "message": "Add helper class for one-shot events",
+      "tree": {
+        "sha": "cddd92aef1df2383ccbf8e8c2783733f584c1510",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/cddd92aef1df2383ccbf8e8c2783733f584c1510"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/07975b04081e29a34cd8f082bac402032443ffd0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/07975b04081e29a34cd8f082bac402032443ffd0",
+    "html_url": "https://github.com/phanghos/chh-test/commit/07975b04081e29a34cd8f082bac402032443ffd0",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/07975b04081e29a34cd8f082bac402032443ffd0/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "40983538785facda09d2fe7c0171c36ed317f1a9",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/40983538785facda09d2fe7c0171c36ed317f1a9",
+        "html_url": "https://github.com/phanghos/chh-test/commit/40983538785facda09d2fe7c0171c36ed317f1a9"
+      }
+    ]
+  },
+  {
+    "sha": "40983538785facda09d2fe7c0171c36ed317f1a9",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjQwOTgzNTM4Nzg1ZmFjZGEwOWQyZmU3YzAxNzFjMzZlZDMxN2YxYTk=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:31:56Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:31:56Z"
+      },
+      "message": "Add Kotlin extensions class",
+      "tree": {
+        "sha": "ce8e4d7b0f4271430b0c8e28b19d7f3bc80abfcb",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/ce8e4d7b0f4271430b0c8e28b19d7f3bc80abfcb"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/40983538785facda09d2fe7c0171c36ed317f1a9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/40983538785facda09d2fe7c0171c36ed317f1a9",
+    "html_url": "https://github.com/phanghos/chh-test/commit/40983538785facda09d2fe7c0171c36ed317f1a9",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/40983538785facda09d2fe7c0171c36ed317f1a9/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "d9a4a8893fd7f8c2e3410770b831abbc1b2cdfb8",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/d9a4a8893fd7f8c2e3410770b831abbc1b2cdfb8",
+        "html_url": "https://github.com/phanghos/chh-test/commit/d9a4a8893fd7f8c2e3410770b831abbc1b2cdfb8"
+      }
+    ]
+  },
+  {
+    "sha": "d9a4a8893fd7f8c2e3410770b831abbc1b2cdfb8",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOmQ5YTRhODg5M2ZkN2Y4YzJlMzQxMDc3MGI4MzFhYmJjMWIyY2RmYjg=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:31:42Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:31:42Z"
+      },
+      "message": "Add base interfaces for architecture as well as a simple BaseViewModel implementation",
+      "tree": {
+        "sha": "b4b518a1f50fa8bdbf7f9c49785288c3f32a7c8a",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/b4b518a1f50fa8bdbf7f9c49785288c3f32a7c8a"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/d9a4a8893fd7f8c2e3410770b831abbc1b2cdfb8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/d9a4a8893fd7f8c2e3410770b831abbc1b2cdfb8",
+    "html_url": "https://github.com/phanghos/chh-test/commit/d9a4a8893fd7f8c2e3410770b831abbc1b2cdfb8",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/d9a4a8893fd7f8c2e3410770b831abbc1b2cdfb8/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "a6ce27690ce589d3a5dca6818393cb474cf088c8",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/a6ce27690ce589d3a5dca6818393cb474cf088c8",
+        "html_url": "https://github.com/phanghos/chh-test/commit/a6ce27690ce589d3a5dca6818393cb474cf088c8"
+      }
+    ]
+  },
+  {
+    "sha": "a6ce27690ce589d3a5dca6818393cb474cf088c8",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOmE2Y2UyNzY5MGNlNTg5ZDNhNWRjYTY4MTgzOTNjYjQ3NGNmMDg4Yzg=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:30:30Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:30:30Z"
+      },
+      "message": "Add entities, models and their mappers",
+      "tree": {
+        "sha": "c2fb12dd5b9bfb168ddc6585e57a33ef2253209f",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/c2fb12dd5b9bfb168ddc6585e57a33ef2253209f"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/a6ce27690ce589d3a5dca6818393cb474cf088c8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/a6ce27690ce589d3a5dca6818393cb474cf088c8",
+    "html_url": "https://github.com/phanghos/chh-test/commit/a6ce27690ce589d3a5dca6818393cb474cf088c8",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/a6ce27690ce589d3a5dca6818393cb474cf088c8/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "5f9047752fc11690c620ae118679fda093433ca4",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/5f9047752fc11690c620ae118679fda093433ca4",
+        "html_url": "https://github.com/phanghos/chh-test/commit/5f9047752fc11690c620ae118679fda093433ca4"
+      }
+    ]
+  },
+  {
+    "sha": "5f9047752fc11690c620ae118679fda093433ca4",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjVmOTA0Nzc1MmZjMTE2OTBjNjIwYWUxMTg2NzlmZGEwOTM0MzNjYTQ=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:29:19Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:29:19Z"
+      },
+      "message": "Add Dagger module and component, REST API interface and its implementation, as well as the AuthInterceptor to intercept some URLs and add corresponding authorization header",
+      "tree": {
+        "sha": "79690c69e0217902368e38db433563fc2fab945a",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/79690c69e0217902368e38db433563fc2fab945a"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/5f9047752fc11690c620ae118679fda093433ca4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/5f9047752fc11690c620ae118679fda093433ca4",
+    "html_url": "https://github.com/phanghos/chh-test/commit/5f9047752fc11690c620ae118679fda093433ca4",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/5f9047752fc11690c620ae118679fda093433ca4/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "b4a72dfffd48dc9a2af901d34632290b4f0958c9",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/b4a72dfffd48dc9a2af901d34632290b4f0958c9",
+        "html_url": "https://github.com/phanghos/chh-test/commit/b4a72dfffd48dc9a2af901d34632290b4f0958c9"
+      }
+    ]
+  },
+  {
+    "sha": "b4a72dfffd48dc9a2af901d34632290b4f0958c9",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOmI0YTcyZGZmZmQ0OGRjOWEyYWY5MDFkMzQ2MzIyOTBiNGYwOTU4Yzk=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:26:33Z"
+      },
+      "committer": {
+        "name": "Roberto Tatasciore",
+        "email": "",
+        "date": "2018-06-14T07:26:33Z"
+      },
+      "message": "Add base project setup (dependencies, layouts, strings, AndroidManifest)",
+      "tree": {
+        "sha": "48260e17e772173d38ba63f95320a641a3adce98",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/48260e17e772173d38ba63f95320a641a3adce98"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/b4a72dfffd48dc9a2af901d34632290b4f0958c9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/b4a72dfffd48dc9a2af901d34632290b4f0958c9",
+    "html_url": "https://github.com/phanghos/chh-test/commit/b4a72dfffd48dc9a2af901d34632290b4f0958c9",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/b4a72dfffd48dc9a2af901d34632290b4f0958c9/comments",
+    "author": {},
+    "committer": {},
+    "parents": [
+      {
+        "sha": "23d970738253a033160c5d4480c60ea3f224f05d",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/23d970738253a033160c5d4480c60ea3f224f05d",
+        "html_url": "https://github.com/phanghos/chh-test/commit/23d970738253a033160c5d4480c60ea3f224f05d"
+      }
+    ]
+  },
+  {
+    "sha": "8ea4a43767607e84bee336756170491d14ab2b3b",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjhlYTRhNDM3Njc2MDdlODRiZWUzMzY3NTYxNzA0OTFkMTRhYjJiM2I=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "tatasciorecont@gmail.com",
+        "date": "2018-06-14T07:21:16Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2018-06-14T07:21:16Z"
+      },
+      "message": "Update README.md",
+      "tree": {
+        "sha": "9ab8a63cb91a9cb0851aba3543e08ac041c8873f",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/9ab8a63cb91a9cb0851aba3543e08ac041c8873f"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/8ea4a43767607e84bee336756170491d14ab2b3b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbIhdsCRBK7hj4Ov3rIwAAdHIIAFU/xmU93Iy5AkI6LSCnKLhA\nQxlpJ4nbBhcPip2SZMzMWuc/CkX/ida40zbIaBp56CrIonh9xjoYWxoR+TIYvul4\nfurGexUYtDiZyo5at9gy51G93UAO0OirITdxr4V1vXJx6AGxoBGEQmDyg0mSmBjN\nrYleAyfnCdDwsUtAAaxHhm4s2E48/YDGCPEX8bsbbVOGKCUQoTJSDSsFjgZdrrhU\nJ8CgVEoELK5umeK/lTIzgG93Z5mYxzAxl4vrlThpBti439RDceRX9W9Vwzi4qf6o\nB13tHUhTYLwHPK/rNNgQR1lQeQlgMGyApVOWFFRJHsjnbhAHsWuZeNwCE1pRlP4=\n=GI3O\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9ab8a63cb91a9cb0851aba3543e08ac041c8873f\nparent 753b1cbe88c4bc1d967adac32e9be8c0dc5e65a1\nauthor Roberto Tatasciore <tatasciorecont@gmail.com> 1528960876 +0200\ncommitter GitHub <noreply@github.com> 1528960876 +0200\n\nUpdate README.md"
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/8ea4a43767607e84bee336756170491d14ab2b3b",
+    "html_url": "https://github.com/phanghos/chh-test/commit/8ea4a43767607e84bee336756170491d14ab2b3b",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/8ea4a43767607e84bee336756170491d14ab2b3b/comments",
+    "author": {
+      "login": "phanghos",
+      "id": 1209351,
+      "node_id": "MDQ6VXNlcjEyMDkzNTE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1209351?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/phanghos",
+      "html_url": "https://github.com/phanghos",
+      "followers_url": "https://api.github.com/users/phanghos/followers",
+      "following_url": "https://api.github.com/users/phanghos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/phanghos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/phanghos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/phanghos/subscriptions",
+      "organizations_url": "https://api.github.com/users/phanghos/orgs",
+      "repos_url": "https://api.github.com/users/phanghos/repos",
+      "events_url": "https://api.github.com/users/phanghos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/phanghos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "753b1cbe88c4bc1d967adac32e9be8c0dc5e65a1",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/753b1cbe88c4bc1d967adac32e9be8c0dc5e65a1",
+        "html_url": "https://github.com/phanghos/chh-test/commit/753b1cbe88c4bc1d967adac32e9be8c0dc5e65a1"
+      }
+    ]
+  },
+  {
+    "sha": "753b1cbe88c4bc1d967adac32e9be8c0dc5e65a1",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjc1M2IxY2JlODhjNGJjMWQ5NjdhZGFjMzJlOWJlOGMwZGM1ZTY1YTE=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "tatasciorecont@gmail.com",
+        "date": "2018-06-14T07:20:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2018-06-14T07:20:45Z"
+      },
+      "message": "Update README.md",
+      "tree": {
+        "sha": "dc82a995b0ca3f629c4a3468ea3b96b1cb1d13de",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/dc82a995b0ca3f629c4a3468ea3b96b1cb1d13de"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/753b1cbe88c4bc1d967adac32e9be8c0dc5e65a1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbIhdNCRBK7hj4Ov3rIwAAdHIIADcPK+YjWebTWXeFTdriOFk+\nf9xMhPBeTuesTTEf19pSuAM987X6xbE0OcccN4rhla8iseRuvsLljuxLkkaO6vlN\n2jNr9qBoldnvc9VO2KQntq9C2D+Le5CXjdbXZbqxClFQjObDxUABjy3VG7DCftN7\nbyom3ioc7K+LD6+lTrOeVH5vzVOXVdHl8MJd+KmeqL36FOIclzFPeqgtbmcwNIZ6\nmXFt5+peUUtwJCfd3u3ku40vK4pf+0fyRGtvfN2eINiS3y2jBOy5AfwgMfWlrMr5\nfXiywr4pIRckDV9HIEunAwqxoLFKqTURuqZc9Hk5439CWe7KXaWDJ8YzaasJYxU=\n=CYJJ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dc82a995b0ca3f629c4a3468ea3b96b1cb1d13de\nparent 148569f8587c06de762f640b10023f4a50b70925\nauthor Roberto Tatasciore <tatasciorecont@gmail.com> 1528960845 +0200\ncommitter GitHub <noreply@github.com> 1528960845 +0200\n\nUpdate README.md"
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/753b1cbe88c4bc1d967adac32e9be8c0dc5e65a1",
+    "html_url": "https://github.com/phanghos/chh-test/commit/753b1cbe88c4bc1d967adac32e9be8c0dc5e65a1",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/753b1cbe88c4bc1d967adac32e9be8c0dc5e65a1/comments",
+    "author": {
+      "login": "phanghos",
+      "id": 1209351,
+      "node_id": "MDQ6VXNlcjEyMDkzNTE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1209351?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/phanghos",
+      "html_url": "https://github.com/phanghos",
+      "followers_url": "https://api.github.com/users/phanghos/followers",
+      "following_url": "https://api.github.com/users/phanghos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/phanghos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/phanghos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/phanghos/subscriptions",
+      "organizations_url": "https://api.github.com/users/phanghos/orgs",
+      "repos_url": "https://api.github.com/users/phanghos/repos",
+      "events_url": "https://api.github.com/users/phanghos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/phanghos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "148569f8587c06de762f640b10023f4a50b70925",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/148569f8587c06de762f640b10023f4a50b70925",
+        "html_url": "https://github.com/phanghos/chh-test/commit/148569f8587c06de762f640b10023f4a50b70925"
+      }
+    ]
+  },
+  {
+    "sha": "148569f8587c06de762f640b10023f4a50b70925",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjE0ODU2OWY4NTg3YzA2ZGU3NjJmNjQwYjEwMDIzZjRhNTBiNzA5MjU=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "tatasciorecont@gmail.com",
+        "date": "2018-06-14T07:16:05Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2018-06-14T07:16:05Z"
+      },
+      "message": "Update README.md",
+      "tree": {
+        "sha": "83c90baa3d80d98e6af5e69ef30d0b0915a955e5",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/83c90baa3d80d98e6af5e69ef30d0b0915a955e5"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/148569f8587c06de762f640b10023f4a50b70925",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbIhY1CRBK7hj4Ov3rIwAAdHIIAFksaWxxTz4Vyj45cYENPnE8\nsj6GZj0zOhDNDaFN7dRCtexAo+cz5fFwqDb3Ta0GUPtsxhxbEjR1dj6Kc8yNpV8M\nSVOc693nLAqep2SYKWtUtjunHZvWySW38DrdEuMEaYIUelEIU6Lf7HjegPIe/S/V\nN4PDuNDH51jZDYTIe5Oiwy3JS0BFiQaCDtJ06nxfJAFtA8iIJvCXeABpuc3Of1E2\ntDUPFJQlzMmw1yk6JpcH6LAFN9wRHuD4K3H5h59q12MPJzmjtpMPltrqn6pJW327\nfhzR1RdNBgmiRLRtG4YkGXNlwH0gU2vMsB4+TLohjZagSJVKEqC0Q5pSSvjwYGQ=\n=/xJ8\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 83c90baa3d80d98e6af5e69ef30d0b0915a955e5\nparent 23d970738253a033160c5d4480c60ea3f224f05d\nauthor Roberto Tatasciore <tatasciorecont@gmail.com> 1528960565 +0200\ncommitter GitHub <noreply@github.com> 1528960565 +0200\n\nUpdate README.md"
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/148569f8587c06de762f640b10023f4a50b70925",
+    "html_url": "https://github.com/phanghos/chh-test/commit/148569f8587c06de762f640b10023f4a50b70925",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/148569f8587c06de762f640b10023f4a50b70925/comments",
+    "author": {
+      "login": "phanghos",
+      "id": 1209351,
+      "node_id": "MDQ6VXNlcjEyMDkzNTE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1209351?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/phanghos",
+      "html_url": "https://github.com/phanghos",
+      "followers_url": "https://api.github.com/users/phanghos/followers",
+      "following_url": "https://api.github.com/users/phanghos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/phanghos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/phanghos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/phanghos/subscriptions",
+      "organizations_url": "https://api.github.com/users/phanghos/orgs",
+      "repos_url": "https://api.github.com/users/phanghos/repos",
+      "events_url": "https://api.github.com/users/phanghos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/phanghos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "23d970738253a033160c5d4480c60ea3f224f05d",
+        "url": "https://api.github.com/repos/phanghos/chh-test/commits/23d970738253a033160c5d4480c60ea3f224f05d",
+        "html_url": "https://github.com/phanghos/chh-test/commit/23d970738253a033160c5d4480c60ea3f224f05d"
+      }
+    ]
+  },
+  {
+    "sha": "23d970738253a033160c5d4480c60ea3f224f05d",
+    "node_id": "MDY6Q29tbWl0MTM3MzE4NDkyOjIzZDk3MDczODI1M2EwMzMxNjBjNWQ0NDgwYzYwZWEzZjIyNGYwNWQ=",
+    "commit": {
+      "author": {
+        "name": "Roberto Tatasciore",
+        "email": "tatasciorecont@gmail.com",
+        "date": "2018-06-14T06:53:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2018-06-14T06:53:54Z"
+      },
+      "message": "Initial commit",
+      "tree": {
+        "sha": "526c0f8e31ec3c8786554d77ca4736a8871949d0",
+        "url": "https://api.github.com/repos/phanghos/chh-test/git/trees/526c0f8e31ec3c8786554d77ca4736a8871949d0"
+      },
+      "url": "https://api.github.com/repos/phanghos/chh-test/git/commits/23d970738253a033160c5d4480c60ea3f224f05d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbIhECCRBK7hj4Ov3rIwAAdHIIAGEBUAYOKgI1vD3qezGka8in\nMlvFkaa2fWPMUR/XjJF81hLqoXMGQpvc84p7M2SyeJYq/WqQ9e3BzsSu2R0eg6qU\npS4aICQO0vsirO2KrAUiB0uOYPLL56CRo5utpZzYLXTYw4g773UA3itO6OHfkMcD\ng6okgtjDYqpwBWvEDFn4kSVqac8ygk7LzXLr98ThnXoZky4L0Ka+I7Af4ZjXV0yR\n5rUK++kuKlq+9/xHZgTpVC/cpkjWjzvwB9XcU6/14oK1nMHJ3YjRwxVoBEofYoZL\njUG5UlkTgHjqXW/oKCPQZwVDTm5qNjZpjrcHr5qXM3cNYShyxf60EZtnzs8CKw8=\n=nEXN\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 526c0f8e31ec3c8786554d77ca4736a8871949d0\nauthor Roberto Tatasciore <tatasciorecont@gmail.com> 1528959234 +0200\ncommitter GitHub <noreply@github.com> 1528959234 +0200\n\nInitial commit"
+      }
+    },
+    "url": "https://api.github.com/repos/phanghos/chh-test/commits/23d970738253a033160c5d4480c60ea3f224f05d",
+    "html_url": "https://github.com/phanghos/chh-test/commit/23d970738253a033160c5d4480c60ea3f224f05d",
+    "comments_url": "https://api.github.com/repos/phanghos/chh-test/commits/23d970738253a033160c5d4480c60ea3f224f05d/comments",
+    "author": {
+      "login": "phanghos",
+      "id": 1209351,
+      "node_id": "MDQ6VXNlcjEyMDkzNTE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1209351?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/phanghos",
+      "html_url": "https://github.com/phanghos",
+      "followers_url": "https://api.github.com/users/phanghos/followers",
+      "following_url": "https://api.github.com/users/phanghos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/phanghos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/phanghos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/phanghos/subscriptions",
+      "organizations_url": "https://api.github.com/users/phanghos/orgs",
+      "repos_url": "https://api.github.com/users/phanghos/repos",
+      "events_url": "https://api.github.com/users/phanghos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/phanghos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": []
+  }
+]
