@@ -7,8 +7,8 @@ import {
 } from '../actions/repositories';
 import { apiService } from '../api/ApiService';
 
-const repoMock = require('./repositoriesMock.json');
-const repoSearchMock = require('./repoSearchMock.json');
+const repoMock = require('../mocks/repositoriesMock.json');
+const repoSearchMock = require('../mocks/repoSearchMock.json');
 
 function* getUserRepositories(action) {
   try {

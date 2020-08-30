@@ -7,7 +7,7 @@ import { CollapsibleTopBar } from '../../components/CollapsibleTopBar/Collapsibl
 import { useGetCollapsibleHeaderProps } from '../../hooks/useGetCollapsibleHeaderProps';
 import { scrollIndicatorInsets } from '../../constants';
 import genericStyles from '../../styles';
-const mockJson = require('../../sagas/commitsMock.json');
+const mockJson = require('../../mocks/commitsMock.json');
 
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 

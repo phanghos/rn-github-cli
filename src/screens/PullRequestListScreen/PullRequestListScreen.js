@@ -7,7 +7,7 @@ import { useGetCollapsibleHeaderProps } from '../../hooks/useGetCollapsibleHeade
 import { scrollIndicatorInsets } from '../../constants';
 import { CollapsibleTopBar } from '../../components/CollapsibleTopBar/CollapsibleTopBar';
 import genericStyles from '../../styles';
-const mockJson = require('../sagas/pullRequestsMock.json');
+const mockJson = require('../../mocks/pullRequestListMock.json');
 
 const renderItem = ({ item }) => {
   return (

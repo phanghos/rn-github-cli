@@ -1,9 +1,9 @@
-import {useState, useEffect} from 'react';
-import {apiService} from '../../api/ApiService';
+import { useState, useEffect } from 'react';
+import { apiService } from '../../api/ApiService';
 
-const mockJson = require('../../sagas/pullRequestMock.json');
+const mockJson = require('../../mocks/pullRequestMock.json');
 
-export const useFetchPullRequest = (url) => {
+export const useFetchPullRequest = url => {
   const [isLoading, setIsLoading] = useState(true);
   const [pullRequest, setPullRequest] = useState();
 
@@ -18,5 +18,5 @@ export const useFetchPullRequest = (url) => {
     }, 0);
   }, []);
 
-  return {isLoading, pullRequest};
+  return { isLoading, pullRequest };
 };
