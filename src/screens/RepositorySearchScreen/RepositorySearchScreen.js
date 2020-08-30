@@ -2,8 +2,8 @@ import React, { useCallback, useEffect } from 'react';
 import { FlatList } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { SafeAreaView } from 'react-navigation';
-import { Spinner, RepositoryResult } from '../components';
-import { REPOS_SEARCH_CLEAR } from '../actions/repositories';
+import { Spinner, RepositoryResult } from '../../components';
+import { REPOS_SEARCH_CLEAR } from '../../actions/repositories';
 
 const keyExtractor = (_, index) => index.toString();
 
@@ -17,7 +17,7 @@ export const RepositorySearchScreen = () => {
   }, []);
 
   const renderItem = useCallback(({ item }) => {
-    return <RepositoryResult {...item} />;
+    return <RepositoryResult repo={item} />;
   }, []);
 
   return (

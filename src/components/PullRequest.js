@@ -5,10 +5,8 @@ import { Text } from './Text';
 import { LabelList } from './LabelList';
 
 export const PullRequest = ({
-  head: {
-    repo: { name },
-  },
-  user: { login: username },
+  repoName,
+  username,
   number,
   title,
   labels = [],
@@ -33,7 +31,7 @@ export const PullRequest = ({
           style={{
             marginBottom: 4,
           }}
-          fontWeight="200">{`${username} / ${name} #${number}`}</Text>
+          fontWeight="200">{`${username} / ${repoName} #${number}`}</Text>
         <Text
           style={{ marginBottom: labels.length > 0 ? 8 : 0 }}
           fontWeight="400">

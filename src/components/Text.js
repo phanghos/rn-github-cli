@@ -1,22 +1,28 @@
 import React from 'react';
 import { Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
+import Animated from 'react-native-reanimated';
+
+const AnimatedText = Animated.createAnimatedComponent(RNText);
 
 export const Text = ({ children, fontFamily, fontWeight, style }) => {
   return children ? (
-    <RNText style={[{ fontFamily, fontWeight }, style]}>{children}</RNText>
+    <AnimatedText style={[{ fontFamily, fontWeight }, style]}>
+      {children}
+    </AnimatedText>
   ) : null;
 };
 
 Text.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  // children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
-  style: RNText.propTypes.style,
+  style: PropTypes.oneOfType([RNText.propTypes.style, PropTypes.object]),
 };
 
 Text.defaultProps = {
-  children: undefined,
+  // children: undefined,
   fontFamily: 'Roboto-Regular',
   fontWeight: '400',
+  style: undefined,
 };

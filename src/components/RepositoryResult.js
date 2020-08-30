@@ -7,16 +7,19 @@ import { Text } from './Text';
 const languageColors = require('../utils/languageColors.json');
 
 export const RepositoryResult = ({
-  name,
-  description,
-  watchers,
-  language,
-  owner: { login: username, avatar_url: avatarUrl },
+  repo,
+  repo: {
+    name,
+    description,
+    watchers,
+    language,
+    owner: { login: username, avatar_url: avatarUrl },
+  },
 }) => {
   const navigation = useNavigation();
 
   const onPress = useCallback(() => {
-    navigation.navigate('Pull Requests');
+    navigation.navigate('Repository', { repo });
   }, [navigation]);
 
   return (
