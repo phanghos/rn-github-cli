@@ -5,8 +5,8 @@ import {
   State,
 } from 'react-native-gesture-handler';
 import Animated, { clockRunning } from 'react-native-reanimated';
-import { useHorizontalSwipe } from '../../hooks/useHorizontalSwipe';
 import { useTapGestureHandler } from 'react-native-redash';
+import { useHorizontalSwipe } from '../../hooks/useHorizontalSwipe';
 import styles from './styles';
 
 const { interpolate, useCode, block, call } = Animated;

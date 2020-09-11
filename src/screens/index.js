@@ -6,4 +6,3 @@ export * from './PullRequestScreen';
 export * from './RepositorySearchScreen';
 export * from './IssuesScreen';
 export * from './LoginScreen';
-export * from './RepositoriesScreen';

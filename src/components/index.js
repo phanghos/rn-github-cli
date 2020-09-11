@@ -8,7 +8,6 @@ export * from './WithSafeArea';
 export * from './Separator';
 export * from './PullRequest';
 export * from './CodeSpinnet';
-export * from './Separator';
 export * from './Comment';
 export * from './CommentList';
 export * from './RepositoryResult';

@@ -16,18 +16,16 @@ const keyExtractor = (_, index) => index.toString();
 export const RepositoriesScreen = () => {
   const isLoading = useSelector(({ repositories }) => repositories.isLoading);
   const repositories = useSelector(
-    ({ repositories }) => repositories.repositories,
+    ({ repositories }) => repositories.repositories, // eslint-disable-line no-shadow
   );
   const dispatch = useDispatch();
   const headerProps = useGetCollapsibleHeaderProps({ title: 'Repositories' });
 
   useEffect(() => {
     dispatch({ type: REPOS_REQUEST, payload: { user: 'phanghos' } });
-  }, []);
+  }, [dispatch]);
 
-  const renderItem = useCallback(({ item }) => {
-    return <Repository repo={item} />;
-  }, []);
+  const renderItem = useCallback(({ item }) => <Repository repo={item} />, []);
 
   const Separator = () => (
     <View style={{ height: 1, backgroundColor: '#f5f6f7' }} />

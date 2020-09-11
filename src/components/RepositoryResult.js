@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import numbro from 'numbro';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Text } from './Text';
+
 const languageColors = require('../utils/languageColors.json');
 
 export const RepositoryResult = ({
@@ -20,7 +21,7 @@ export const RepositoryResult = ({
 
   const onPress = useCallback(() => {
     navigation.navigate('Repository', { repo });
-  }, [navigation]);
+  }, [navigation, repo]);
 
   return (
     <TouchableOpacity onPress={onPress}>
@@ -80,7 +81,8 @@ export const RepositoryResult = ({
                 backgroundColor: languageColors[language],
                 marginRight: 8,
                 borderRadius: 5,
-              }}></View>
+              }}
+            />
             <Text fontWeight="300">{language}</Text>
           </View>
         </View>

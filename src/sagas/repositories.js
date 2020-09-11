@@ -20,7 +20,7 @@ function* getUserRepositories(action) {
     yield delay(1500);
     yield put({ type: REPOS_SUCCESS, payload: { repositories: repoMock } });
   } catch (error) {
-    console.log('Error', error);
+    console.error('Error', error);
   }
 }
 
@@ -40,7 +40,7 @@ function* searchRepositories(action) {
       payload: { repositories: repoSearchMock.items },
     });
   } catch (error) {
-    console.log('Error', error);
+    console.error('Error', error);
   }
 }
 

@@ -7,18 +7,17 @@ import { CollapsibleTopBar } from '../../components/CollapsibleTopBar/Collapsibl
 import { useGetCollapsibleHeaderProps } from '../../hooks/useGetCollapsibleHeaderProps';
 import { scrollIndicatorInsets } from '../../constants';
 import genericStyles from '../../styles';
+
 const mockJson = require('../../mocks/issuesMock.json');
 
-const renderItem = ({ item }) => {
-  return (
-    <PullRequest
-      //   repoName={item.head.repo.name}
-      repoName={'dummy-repo'}
-      username={item.user.login}
-      {...item}
-    />
-  );
-};
+const renderItem = ({ item }) => (
+  <PullRequest
+    //   repoName={item.head.repo.name}
+    repoName="dummy-repo"
+    username={item.user.login}
+    {...item}
+  />
+);
 
 const keyExtractor = (_, index) => index.toString();
 

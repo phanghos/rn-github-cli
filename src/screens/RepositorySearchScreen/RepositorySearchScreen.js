@@ -12,13 +12,12 @@ export const RepositorySearchScreen = () => {
   const repos = useSelector(({ repoSearch }) => repoSearch.repositories);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    return () => dispatch({ type: REPOS_SEARCH_CLEAR });
-  }, []);
+  useEffect(() => () => dispatch({ type: REPOS_SEARCH_CLEAR }), [dispatch]);
 
-  const renderItem = useCallback(({ item }) => {
-    return <RepositoryResult repo={item} />;
-  }, []);
+  const renderItem = useCallback(
+    ({ item }) => <RepositoryResult repo={item} />,
+    [],
+  );
 
   return (
     <SafeAreaView style={{ flex: 1 }}>

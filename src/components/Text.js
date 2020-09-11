@@ -5,13 +5,12 @@ import Animated from 'react-native-reanimated';
 
 const AnimatedText = Animated.createAnimatedComponent(RNText);
 
-export const Text = ({ children, fontFamily, fontWeight, style }) => {
-  return children ? (
+export const Text = ({ children, fontFamily, fontWeight, style }) =>
+  children ? (
     <AnimatedText style={[{ fontFamily, fontWeight }, style]}>
       {children}
     </AnimatedText>
   ) : null;
-};
 
 Text.propTypes = {
   // children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),

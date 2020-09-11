@@ -14,8 +14,8 @@ const ItemSeparator = () => (
 );
 
 export const CommentList = ({ comments }) => {
-  const renderItem = useCallback(({ item }) => {
-    return (
+  const renderItem = useCallback(
+    ({ item }) => (
       <View
         style={{
           shadowColor: '#000',
@@ -29,8 +29,9 @@ export const CommentList = ({ comments }) => {
         }}>
         <Comment {...item} />
       </View>
-    );
-  }, []);
+    ),
+    [],
+  );
 
   return (
     <FlatList

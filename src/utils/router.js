@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaView } from 'react-navigation';
+import { useDispatch } from 'react-redux';
 import {
   RepositoriesScreen,
   RepositoryScreen,
@@ -12,7 +13,6 @@ import {
   LoginScreen,
 } from '../screens';
 import { SearchBar } from '../components/SearchBar';
-import { useDispatch } from 'react-redux';
 import { REPOS_SEARCH_REQUEST } from '../actions/repositories';
 
 const AppStack = createStackNavigator();

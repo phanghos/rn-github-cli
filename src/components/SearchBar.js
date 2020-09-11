@@ -9,9 +9,12 @@ export const SearchBar = ({ onSubmit }) => {
     inputRef.current.focus();
   }, []);
 
-  const onSubmitEditting = useCallback(({ nativeEvent }) => {
-    onSubmit(nativeEvent.text);
-  }, []);
+  const onSubmitEditting = useCallback(
+    ({ nativeEvent }) => {
+      onSubmit(nativeEvent.text);
+    },
+    [onSubmit],
+  );
 
   return (
     <TextInput

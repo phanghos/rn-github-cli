@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+
 const mockJson = require('../../mocks/commentsMock.json');
 
 export const useFetchComments = () => {

@@ -8,7 +8,7 @@ const endpoints = {
   searchRepositories: 'search/repositories',
 };
 
-let axios = undefined;
+let axios;
 
 class ApiService {
   constructor() {

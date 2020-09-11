@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import { View, Image } from 'react-native';
-import { Text } from './Text';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
+import { Text } from './Text';
 import { SwipeableView } from './SwipeableView';
 
 export const Repository = ({ repo }) => {
@@ -15,10 +15,10 @@ export const Repository = ({ repo }) => {
 
   const onPress = useCallback(() => {
     navigation.navigate('Repository', { repo });
-  }, [navigation]);
+  }, [navigation, repo]);
 
-  const RepositoryContentView = useCallback(() => {
-    return (
+  const RepositoryContentView = useCallback(
+    () => (
       <View style={{ flex: 1, zIndex: 10, backgroundColor: 'white' }}>
         <RectButton
           onPress={onPress}
@@ -54,8 +54,9 @@ export const Repository = ({ repo }) => {
           </View>
         </RectButton>
       </View>
-    );
-  }, [name, description, username, avatarUrl, repo]);
+    ),
+    [name, username, avatarUrl, onPress],
+  );
 
   return description ? (
     <SwipeableView
@@ -68,7 +69,7 @@ export const Repository = ({ repo }) => {
           {description}
         </Text>
       }>
-      {<RepositoryContentView />}
+      <RepositoryContentView />
     </SwipeableView>
   ) : (
     <RepositoryContentView />

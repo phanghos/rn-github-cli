@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import Animated from 'react-native-reanimated';
 // import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Text } from '../Text';
-import { Separator } from '../Separator';
 import { HeaderBackButton } from '@react-navigation/stack';
 import { useNavigation } from '@react-navigation/native';
+import { Text } from '../Text';
+import { Separator } from '../Separator';
 
 export const TopBar = ({
   title,
@@ -60,7 +60,7 @@ export const TopBar = ({
               fontSize: fontSize || new Animated.Value(24),
               textAlign: 'center',
             }}
-            fontWeight={'700'}>
+            fontWeight="700">
             {title}
           </Text>
           <TouchableOpacity
@@ -92,13 +92,23 @@ export const TopBar = ({
 TopBar.propTypes = {
   title: PropTypes.string.isRequired,
   hasBackButton: PropTypes.bool,
-  hasBottomLine: PropTypes.object,
-  fontSize: PropTypes.object,
-  style: PropTypes.oneOfType([ViewPropTypes.style, PropTypes.object]),
+  hasBottomLine: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.instanceOf(Animated.Value),
+  ]),
+  fontSize: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.instanceOf(Animated.Value),
+  ]),
+  style: PropTypes.oneOfType([
+    ViewPropTypes.style,
+    PropTypes.instanceOf(Animated.Value),
+  ]),
 };
 
 TopBar.defaultProps = {
   hasBackButton: false,
-  hasBottomLine: new Animated.Value(1),
-  fontSize: new Animated.Value(24),
+  hasBottomLine: 1,
+  fontSize: 24,
+  style: undefined,
 };

@@ -1,12 +1,10 @@
 import React, { useCallback } from 'react';
-import { ScrollView } from 'react-native';
+import { FlatList, View } from 'react-native';
 import { Label } from './Label';
-import { FlatList } from 'react-native';
-import { View } from 'react-native';
 
 const getStyle = (index, length) => {
   if (index === 0) return { marginRight: 4 };
-  else if (index === length - 1) return { marginLeft: 4 };
+  if (index === length - 1) return { marginLeft: 4 };
   return { marginHorizontal: 4 };
 };
 

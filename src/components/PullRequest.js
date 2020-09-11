@@ -31,7 +31,9 @@ export const PullRequest = ({
           style={{
             marginBottom: 4,
           }}
-          fontWeight="200">{`${username} / ${repoName} #${number}`}</Text>
+          fontWeight="200">
+          {`${username} / ${repoName} #${number}`}
+        </Text>
         <Text
           style={{ marginBottom: labels.length > 0 ? 8 : 0 }}
           fontWeight="400">
