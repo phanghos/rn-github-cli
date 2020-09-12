@@ -52,20 +52,12 @@ module.exports = {
     'import/resolver': {
       alias: {
         map: [
-          // [
-          //   '@screens/RepositorySearchScreen/components/RepositorySearchBar/RepositorySearchBar',
-          //   './src/screens/RepositorySearchScreen/components/RepositorySearchBar/RepositorySearchBar',
-          // ],
-          // [
-          //   '@screens/RepositorySearchScreen/hooks/useSearchRepositories',
-          //   './src/screens/RepositorySearchScreen/hooks/useSearchRepositories',
-          // ],
-          ['@components', './src/components/index.js'],
-          ['@screens', './src/screens/index.js'],
-          ['@hooks', './src/hooks'],
-          ['@context', './src/context'],
-          ['@constants', './src/constants.js'],
-          ['@api', './src/api/ApiService.js'],
+          // ['@components', './src/components/index.js'],
+          // ['@screens', './src/screens/index.js'],
+          // ['@hooks', './src/hooks'],
+          // ['@context', './src/context'],
+          // ['@constants', './src/constants.js'],
+          // ['@api', './src/api/ApiService.js'],
         ],
         extensions: ['.js', '.jsx', '.json'],
       },
