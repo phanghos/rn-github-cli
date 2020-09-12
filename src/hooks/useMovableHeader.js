@@ -1,6 +1,6 @@
 import Animated, { useValue, interpolate } from 'react-native-reanimated';
 import { onScrollEvent } from 'react-native-redash';
-import { headerHeight } from '../constants';
+import { headerHeight } from '@constants';
 
 export const useMovableHeader = () => {
   const y = useValue(0);

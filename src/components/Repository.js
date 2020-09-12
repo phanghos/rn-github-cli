@@ -3,12 +3,10 @@ import { View, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 import { Text } from './Text';
-import { SwipeableView } from './SwipeableView';
 
 export const Repository = ({ repo }) => {
   const {
     name,
-    description,
     owner: { login: username, avatar_url: avatarUrl },
   } = repo;
   const navigation = useNavigation();
@@ -58,20 +56,5 @@ export const Repository = ({ repo }) => {
     [name, username, avatarUrl, onPress],
   );
 
-  return description ? (
-    <SwipeableView
-      onPress={onPress}
-      menu={
-        <Text
-          style={{ textAlign: 'center', marginVertical: 16 }}
-          fontFamily="Roboto-LightItalic"
-          fontWeight="400">
-          {description}
-        </Text>
-      }>
-      <RepositoryContentView />
-    </SwipeableView>
-  ) : (
-    <RepositoryContentView />
-  );
+  return <RepositoryContentView />;
 };

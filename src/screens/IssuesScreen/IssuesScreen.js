@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { FlatList, View } from 'react-native';
 import Animated from 'react-native-reanimated';
-import { apiService } from '../../api/ApiService';
-import { Spinner, PullRequest } from '../../components';
-import { CollapsibleTopBar } from '../../components/CollapsibleTopBar/CollapsibleTopBar';
-import { useGetCollapsibleHeaderProps } from '../../hooks/useGetCollapsibleHeaderProps';
-import { scrollIndicatorInsets } from '../../constants';
+import {
+  Spinner,
+  PullRequest,
+  CollapsibleTopBar,
+  Separator,
+} from '@components';
+import { useGetCollapsibleHeaderProps } from '@hooks/useGetCollapsibleHeaderProps';
+import { scrollIndicatorInsets } from '@constants';
+import { apiService } from '@api';
 import genericStyles from '../../styles';
 
 const mockJson = require('../../mocks/issuesMock.json');
@@ -20,10 +24,6 @@ const renderItem = ({ item }) => (
 );
 
 const keyExtractor = (_, index) => index.toString();
-
-const Separator = () => (
-  <View style={{ height: 1, backgroundColor: '#f5f6f7' }} />
-);
 
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 

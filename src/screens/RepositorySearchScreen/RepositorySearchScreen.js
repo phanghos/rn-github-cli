@@ -1,18 +1,15 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useContext } from 'react';
 import { FlatList } from 'react-native';
-import { useSelector, useDispatch } from 'react-redux';
 import { SafeAreaView } from 'react-navigation';
-import { Spinner, RepositoryResult } from '../../components';
-import { REPOS_SEARCH_CLEAR } from '../../actions/repositories';
+import { Spinner, RepositoryResult } from '@components';
+import { RepoSearchContext } from '@context/RepoSearchContext';
 
 const keyExtractor = (_, index) => index.toString();
 
 export const RepositorySearchScreen = () => {
-  const isLoading = useSelector(({ repoSearch }) => repoSearch.isLoading);
-  const repos = useSelector(({ repoSearch }) => repoSearch.repositories);
-  const dispatch = useDispatch();
+  const { isLoading, repos, reset } = useContext(RepoSearchContext);
 
-  useEffect(() => () => dispatch({ type: REPOS_SEARCH_CLEAR }), [dispatch]);
+  useEffect(() => () => reset(), [reset]);
 
   const renderItem = useCallback(
     ({ item }) => <RepositoryResult repo={item} />,

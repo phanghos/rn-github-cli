@@ -13,5 +13,7 @@ export * from './CommentList';
 export * from './RepositoryResult';
 export * from './TopBar';
 export * from './AnimatedTopBar';
-export * from './SwipeableView';
 export * from './Commit';
+export * from './SearchBar';
+export * from './CollapsibleTopBar';
+export * from './RepositorySearchManager';

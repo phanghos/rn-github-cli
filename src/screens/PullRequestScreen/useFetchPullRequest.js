@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { apiService } from '../../api/ApiService';
+import { apiService } from '@api';
 
 const mockJson = require('../../mocks/pullRequestMock.json');
 

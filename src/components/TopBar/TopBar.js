@@ -1,11 +1,11 @@
 import React from 'react';
-import { ViewPropTypes, View, TouchableOpacity } from 'react-native';
+import { ViewPropTypes, View } from 'react-native';
 import PropTypes from 'prop-types';
-import Animated from 'react-native-reanimated';
-// import { TouchableOpacity } from 'react-native-gesture-handler';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { HeaderBackButton } from '@react-navigation/stack';
 import { useNavigation } from '@react-navigation/native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import Animated from 'react-native-reanimated';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { Text } from '../Text';
 import { Separator } from '../Separator';
 
@@ -64,14 +64,13 @@ export const TopBar = ({
             {title}
           </Text>
           <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('RepositorySearch');
-            }}>
+            hitSlop={{ top: 16, bottom: 16, left: 32, right: 16 }}
+            onPress={() => navigation.navigate('RepositorySearch')}>
             <Icon
               name="search"
               size={16}
               color="#4997d0"
-              style={{ right: 16, zIndex: 3 }}
+              style={{ right: 16 }}
             />
           </TouchableOpacity>
         </Animated.View>
@@ -94,16 +93,13 @@ TopBar.propTypes = {
   hasBackButton: PropTypes.bool,
   hasBottomLine: PropTypes.oneOfType([
     PropTypes.number,
-    PropTypes.instanceOf(Animated.Value),
+    PropTypes.instanceOf(Animated.Node),
   ]),
   fontSize: PropTypes.oneOfType([
     PropTypes.number,
-    PropTypes.instanceOf(Animated.Value),
+    PropTypes.instanceOf(Animated.Node),
   ]),
-  style: PropTypes.oneOfType([
-    ViewPropTypes.style,
-    PropTypes.instanceOf(Animated.Value),
-  ]),
+  style: ViewPropTypes.style,
 };
 
 TopBar.defaultProps = {

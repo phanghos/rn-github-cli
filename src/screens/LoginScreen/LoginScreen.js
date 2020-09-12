@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import WebView from 'react-native-webview';
-import { apiService } from '../../api/ApiService';
+import { apiService } from '@api';
 import { clientId } from '../../config';
 
 export const LoginScreen = () => {

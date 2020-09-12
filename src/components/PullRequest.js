@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
-import { TouchableOpacity, View } from 'react-native';
+import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Text } from './Text';
 import { LabelList } from './LabelList';
 

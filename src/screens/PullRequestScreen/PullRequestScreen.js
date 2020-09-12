@@ -3,8 +3,6 @@ import { FlatList, View } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Markdown from 'react-native-markdown-display';
-import { useFetchPullRequest } from './useFetchPullRequest';
-import { useFetchComments } from './useFetchComments';
 import {
   Spinner,
   Text,
@@ -12,7 +10,9 @@ import {
   Separator,
   CommentList,
   Comment,
-} from '../../components';
+} from '@components';
+import { useFetchPullRequest } from './useFetchPullRequest';
+import { useFetchComments } from './useFetchComments';
 
 const keyExtractor = (_, index) => index.toString();
 

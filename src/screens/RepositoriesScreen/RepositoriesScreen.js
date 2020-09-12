@@ -1,12 +1,10 @@
 import React, { useEffect, useCallback } from 'react';
 import { View, FlatList } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
 import Animated from 'react-native-reanimated';
-import { REPOS_REQUEST } from '../../actions/repositories';
-import { Repository, Spinner } from '../../components';
-import { CollapsibleTopBar } from '../../components/CollapsibleTopBar/CollapsibleTopBar';
-import { useGetCollapsibleHeaderProps } from '../../hooks/useGetCollapsibleHeaderProps';
-import { scrollIndicatorInsets } from '../../constants';
+import { Repository, Spinner, CollapsibleTopBar, Separator } from '@components';
+import { useGetCollapsibleHeaderProps } from '@hooks/useGetCollapsibleHeaderProps';
+import { scrollIndicatorInsets } from '@constants';
+import { useFetchRepositories } from './useFetchRepositories';
 import genericStyles from '../../styles';
 
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
@@ -14,22 +12,16 @@ const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 const keyExtractor = (_, index) => index.toString();
 
 export const RepositoriesScreen = () => {
-  const isLoading = useSelector(({ repositories }) => repositories.isLoading);
-  const repositories = useSelector(
-    ({ repositories }) => repositories.repositories, // eslint-disable-line no-shadow
+  const { isLoading, repos, fetchRepositories } = useFetchRepositories(
+    'phanghos',
   );
-  const dispatch = useDispatch();
   const headerProps = useGetCollapsibleHeaderProps({ title: 'Repositories' });
 
   useEffect(() => {
-    dispatch({ type: REPOS_REQUEST, payload: { user: 'phanghos' } });
-  }, [dispatch]);
+    fetchRepositories('phanghos');
+  }, [fetchRepositories]);
 
   const renderItem = useCallback(({ item }) => <Repository repo={item} />, []);
-
-  const Separator = () => (
-    <View style={{ height: 1, backgroundColor: '#f5f6f7' }} />
-  );
 
   return isLoading ? (
     <Spinner />
@@ -41,7 +33,7 @@ export const RepositoriesScreen = () => {
         scrollEventThrottle={16}
         contentContainerStyle={genericStyles.listWithAnimatedHeader}
         scrollIndicatorInsets={scrollIndicatorInsets}
-        data={repositories}
+        data={repos}
         renderItem={renderItem}
         keyExtractor={keyExtractor}
         ItemSeparatorComponent={Separator}

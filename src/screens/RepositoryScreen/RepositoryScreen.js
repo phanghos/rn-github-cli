@@ -1,8 +1,9 @@
 import React, { useCallback } from 'react';
-import { View, Image, TouchableOpacity } from 'react-native';
+import { View, Image } from 'react-native';
 import { useRoute, useNavigation } from '@react-navigation/native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import numbro from 'numbro';
-import { Text, Page, Separator, TopBar } from '../../components';
+import { Text, Page, Separator, TopBar } from '@components';
 
 const RowItem = ({ title, value }) => (
   <View style={{ flexDirection: 'row', padding: 16 }}>

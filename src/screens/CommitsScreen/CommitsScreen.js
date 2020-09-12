@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { View, FlatList } from 'react-native';
 import Animated from 'react-native-reanimated';
-import { apiService } from '../../api/ApiService';
-import { Spinner, Commit, Separator } from '../../components';
-import { CollapsibleTopBar } from '../../components/CollapsibleTopBar/CollapsibleTopBar';
-import { useGetCollapsibleHeaderProps } from '../../hooks/useGetCollapsibleHeaderProps';
-import { scrollIndicatorInsets } from '../../constants';
+import { Spinner, Commit, Separator, CollapsibleTopBar } from '@components';
+import { useGetCollapsibleHeaderProps } from '@hooks/useGetCollapsibleHeaderProps';
+import { scrollIndicatorInsets } from '@constants';
+import { apiService } from '@api';
 import genericStyles from '../../styles';
 
 const mockJson = require('../../mocks/commitsMock.json');

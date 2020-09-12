@@ -6,17 +6,19 @@
  * @flow strict-local
  */
 
-import 'react-native-gesture-handler';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { Provider } from 'react-redux';
 import { AppNavigator } from './src/utils/router';
 import { store } from './src/utils/store';
+import { RepositorySearchManager } from './src/components/RepositorySearchManager';
 
 const App = () => (
-  <NavigationContainer>
-    <AppNavigator />
-  </NavigationContainer>
+  <RepositorySearchManager>
+    <NavigationContainer>
+      <AppNavigator />
+    </NavigationContainer>
+  </RepositorySearchManager>
 );
 
 const AppWrapper = () => (

@@ -1,8 +1,9 @@
 import React, { useCallback } from 'react';
-import { TouchableOpacity, View, Image } from 'react-native';
+import { View, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import numbro from 'numbro';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import numbro from 'numbro';
 import { Text } from './Text';
 
 const languageColors = require('../utils/languageColors.json');
