@@ -1,14 +1,17 @@
 /* eslint-disable */
 const resolve = require('resolve');
-// const path = require('path');
 const chalk = require('chalk');
 
-const log = console.log;
+const logger = console.log;
 
 const regexpList = [
   {
     regexp: /^@components$/,
     pathToResolve: () => `${__dirname}/src/components/index.js`,
+  },
+  {
+    regexp: /^@components\/(?<name>.*)/,
+    pathToResolve: groups => `${__dirname}/src/components/${groups.name}`,
   },
   {
     regexp: /^@screens$/,
@@ -40,12 +43,17 @@ const regexpList = [
 exports.interfaceVersion = 2;
 
 exports.resolve = function (source, file, config) {
-  // log('Resolving:', source, 'from:', file, '\n');
-  const { extensions = ['.js'] } = config;
+  const { extensions = ['.js'], debug = false } = config;
   let pathToResolve,
     resolvedPath,
     match,
     foundMatch = false;
+
+  const log = (msg, params) => {
+    debug && logger(msg, ...params);
+  };
+
+  // log('Resolving:', [source, 'from:', file, '\n']);
 
   try {
     for (let i = 0; i < regexpList.length && !foundMatch; i++) {
@@ -66,13 +74,12 @@ exports.resolve = function (source, file, config) {
       extensions,
       basedir: __dirname,
     });
-    // log(
-    //   chalk.blue('Resolved'),
-    //   chalk.green(source),
-    //   chalk.blue('to'),
-    //   chalk.green(resolvedPath),
-    //   '\n',
-    // );
+    log(chalk.blue('Resolved'), [
+      chalk.green(source),
+      chalk.blue('to'),
+      chalk.green(resolvedPath.replace(__dirname, '')),
+      '\n',
+    ]);
     return { found: true, path: resolvedPath };
   } catch (err) {
     log('resolve threw error:', err);
