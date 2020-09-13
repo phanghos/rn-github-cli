@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { SafeAreaView } from 'react-navigation';
-import { ThemeContext } from '@context/ThemeContext';
+import { useThemeContext } from '@context/ThemeContext';
 
 export const withSafeArea = (Component, forceInset) => ({ ...props }) => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext();
 
   return (
     <SafeAreaView

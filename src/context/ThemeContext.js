@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import { createContext, useContext } from 'react';
 
 const lightTheme = {
   text: '#000',
@@ -16,3 +16,5 @@ export const themes = {
 };
 
 export const ThemeContext = createContext(themes.light);
+
+export const useThemeContext = () => useContext(ThemeContext);

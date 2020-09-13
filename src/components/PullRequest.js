@@ -1,8 +1,8 @@
-import React, { useCallback, useContext } from 'react';
+import React, { useCallback } from 'react';
 import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { ThemeContext } from '@context/ThemeContext';
+import { useThemeContext } from '@context/ThemeContext';
 import { Text } from './Text';
 import { LabelList } from './LabelList';
 
@@ -14,7 +14,7 @@ export const PullRequest = ({
   labels = [],
 }) => {
   const navigation = useNavigation();
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext();
 
   const onPress = useCallback(() => {
     navigation.navigate('Pull Request', { url: '' });

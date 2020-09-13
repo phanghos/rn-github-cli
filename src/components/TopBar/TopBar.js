@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Animated from 'react-native-reanimated';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { ThemeContext } from '@context/ThemeContext';
+import { useThemeContext } from '@context/ThemeContext';
 import { Text } from '../Text';
 import { Separator } from '../Separator';
 
@@ -19,7 +19,7 @@ export const TopBar = ({
   style,
 }) => {
   const navigation = useNavigation();
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext();
 
   return (
     <Animated.View

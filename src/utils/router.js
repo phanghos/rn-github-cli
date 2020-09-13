@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaView } from 'react-navigation';
 import {
@@ -14,12 +14,12 @@ import {
   SettingsScreen,
 } from '@screens';
 import { RepositorySearchBar } from '@screens/RepositorySearchScreen/components/RepositorySearchBar/RepositorySearchBar';
-import { ThemeContext } from '@context/ThemeContext';
+import { useThemeContext } from '@context/ThemeContext';
 
 const AppStack = createStackNavigator();
 
 export const AppNavigator = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext();
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.background }}>

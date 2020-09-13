@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { ThemeContext } from '@context/ThemeContext';
+import { useThemeContext } from '@context/ThemeContext';
 
 export const Page = ({ children, style }) => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext();
 
   return (
     <View

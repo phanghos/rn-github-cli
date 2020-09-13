@@ -1,10 +1,10 @@
-import React, { useCallback, useContext } from 'react';
+import React, { useCallback } from 'react';
 import { View, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import numbro from 'numbro';
-import { ThemeContext } from '@context/ThemeContext';
+import { useThemeContext } from '@context/ThemeContext';
 import { Text } from './Text';
 
 const languageColors = require('../utils/languageColors.json');
@@ -20,7 +20,7 @@ export const RepositoryResult = ({
   },
 }) => {
   const navigation = useNavigation();
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext();
 
   const onPress = useCallback(() => {
     navigation.navigate('Repository', { repo });

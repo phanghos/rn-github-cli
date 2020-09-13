@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
 import Animated from 'react-native-reanimated';
-import { ThemeContext } from '@context/ThemeContext';
+import { useThemeContext } from '@context/ThemeContext';
 
 const AnimatedText = Animated.createAnimatedComponent(RNText);
 
 export const Text = ({ children, fontFamily, fontWeight, style }) => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext();
 
   return children ? (
     <AnimatedText

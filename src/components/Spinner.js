@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { ActivityIndicator } from 'react-native';
-import { ThemeContext } from '@context/ThemeContext';
+import { useThemeContext } from '@context/ThemeContext';
 
 export const Spinner = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext();
 
   return (
     <ActivityIndicator
