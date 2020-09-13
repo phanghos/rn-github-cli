@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Image, ScrollView } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import Markdown from 'react-native-markdown-display';
 import moment from 'moment';
 import { Text } from './Text';
+import { Avatar } from './Avatar';
 
 const rules = {
   table: (node, children, parent, styles) => (
@@ -89,16 +90,7 @@ export const Comment = ({
 }) => (
   <View style={{ padding: 16, backgroundColor: '#fff' }}>
     <View style={{ flexDirection: 'row' }}>
-      <Image
-        source={{ uri: avatarUrl }}
-        style={{
-          width: 35,
-          height: 35,
-          alignSelf: 'center',
-          marginRight: 16,
-          borderRadius: 4,
-        }}
-      />
+      <Avatar source={avatarUrl} style={{ marginRight: 16 }} />
       <View>
         <Text style={{ marginBottom: 2 }} fontWeight="500">
           {username}

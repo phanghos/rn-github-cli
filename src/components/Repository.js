@@ -1,9 +1,10 @@
 import React, { useCallback } from 'react';
-import { View, Image } from 'react-native';
+import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { RectButton, TouchableOpacity } from 'react-native-gesture-handler';
+import { RectButton } from 'react-native-gesture-handler';
 import { useThemeContext } from '@context/ThemeContext';
 import { Text } from './Text';
+import { Avatar } from './Avatar';
 
 export const Repository = ({ repo }) => {
   const {
@@ -32,18 +33,7 @@ export const Repository = ({ repo }) => {
             }}
             accessible>
             <View style={{ flexDirection: 'row' }}>
-              <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
-                <Image
-                  source={{ uri: avatarUrl }}
-                  style={{
-                    width: 35,
-                    height: 35,
-                    alignSelf: 'center',
-                    marginRight: 24,
-                    borderRadius: 4,
-                  }}
-                />
-              </TouchableOpacity>
+              <Avatar source={avatarUrl} />
               <View>
                 <Text style={{ marginBottom: 4 }} fontWeight="200">
                   {username}
@@ -57,7 +47,7 @@ export const Repository = ({ repo }) => {
         </RectButton>
       </View>
     ),
-    [name, username, avatarUrl, navigation, theme.background, onPress],
+    [name, username, avatarUrl, theme.background, onPress],
   );
 
   return <RepositoryContentView />;

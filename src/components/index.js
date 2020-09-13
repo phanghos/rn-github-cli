@@ -19,3 +19,4 @@ export * from './SearchBar';
 export * from './CollapsibleTopBar';
 export * from './CollapsibleTwoLineTopBar';
 export * from './RepositorySearchManager';
+export * from './Avatar';

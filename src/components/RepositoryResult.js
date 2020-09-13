@@ -1,11 +1,12 @@
 import React, { useCallback } from 'react';
-import { View, Image } from 'react-native';
+import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import numbro from 'numbro';
 import { useThemeContext } from '@context/ThemeContext';
 import { Text } from './Text';
+import { Avatar } from './Avatar';
 
 const languageColors = require('../utils/languageColors.json');
 
@@ -35,16 +36,7 @@ export const RepositoryResult = ({
           backgroundColor: theme.background,
         }}>
         <View style={{ flexDirection: 'row', marginBottom: 4 }}>
-          <Image
-            source={{ uri: avatarUrl }}
-            style={{
-              width: 18,
-              height: 18,
-              alignSelf: 'center',
-              marginRight: 8,
-              borderRadius: 4,
-            }}
-          />
+          <Avatar source={avatarUrl} size={18} style={{ marginRight: 8 }} />
           <Text fontWeight="300">{username}</Text>
         </View>
         <Text style={{ marginBottom: 4 }} fontWeight="500">

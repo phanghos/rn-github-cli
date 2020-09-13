@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Image } from 'react-native';
-import { Text } from '@components';
+import { View } from 'react-native';
+import { Text, Avatar } from '@components';
 import { UserStats } from './UserStats';
 
 export const ProfileHeader = ({ user }) => {
@@ -17,16 +17,7 @@ export const ProfileHeader = ({ user }) => {
   return (
     <View>
       <View style={{ flexDirection: 'row', marginBottom: 16 }}>
-        <Image
-          source={{ uri: avatarUrl }}
-          style={{
-            width: 60,
-            height: 60,
-            alignSelf: 'center',
-            marginRight: 24,
-            borderRadius: 8,
-          }}
-        />
+        <Avatar source={avatarUrl} size={60} style={{ borderRadius: 8 }} />
         <View style={{ justifyContent: 'center' }}>
           <Text style={{ fontSize: 20, marginBottom: 2 }} fontWeight="bold">
             {name}

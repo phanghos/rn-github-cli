@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Image } from 'react-native';
-import { Text } from '../Text';
+import { View } from 'react-native';
+import { Text } from '@components/Text';
+import { Avatar } from '@components/Avatar';
 
 export const Commit = ({
   commit: {
@@ -21,15 +22,10 @@ export const Commit = ({
       {message}
     </Text>
     <View style={{ flexDirection: 'row' }}>
-      <Image
-        source={{ uri: avatarUrl }}
-        style={{
-          width: 15,
-          height: 15,
-          borderRadius: 3,
-          marginRight: 6,
-          alignSelf: 'center',
-        }}
+      <Avatar
+        source={avatarUrl}
+        size={15}
+        style={{ marginRight: 6, borderRadius: 3 }}
       />
       <Text fontWeight="500">
         {username}

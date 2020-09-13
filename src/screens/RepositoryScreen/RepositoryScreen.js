@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react';
-import { View, Image } from 'react-native';
+import { View } from 'react-native';
 import { useRoute, useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import numbro from 'numbro';
-import { Text, Page, Separator, TopBar } from '@components';
+import { Text, Page, Separator, TopBar, Avatar } from '@components';
 
 const RowItem = ({ title, value }) => (
   <View style={{ flexDirection: 'row', padding: 16 }}>
@@ -47,16 +47,7 @@ export const RepositoryScreen = () => {
       <TopBar title="Repository" hasBackButton />
       <View style={{ padding: 16 }}>
         <View style={{ flexDirection: 'row' }}>
-          <Image
-            source={{ uri: avatarUrl }}
-            style={{
-              width: 18,
-              height: 18,
-              alignSelf: 'center',
-              marginRight: 8,
-              borderRadius: 4,
-            }}
-          />
+          <Avatar source={avatarUrl} size={18} style={{ marginRight: 8 }} />
           <Text fontWeight="300">{username}</Text>
         </View>
         <Text style={{ fontSize: 24, marginVertical: 16 }} fontWeight="600">
