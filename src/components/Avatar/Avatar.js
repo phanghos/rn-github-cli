@@ -1,19 +1,25 @@
 import React, { useCallback } from 'react';
-import { Image, ViewPropTypes } from 'react-native';
+import { ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
+import Animated from 'react-native-reanimated';
+import { useRotation } from '@hooks/useRotation';
 
 export const Avatar = React.memo(({ source, size, style }) => {
   const navigation = useNavigation();
 
+  const { rotation, start } = useRotation({
+    onFinish: () => navigation.navigate('Profile'),
+  });
+
   const goToProfile = useCallback(() => {
-    navigation.navigate('Profile');
-  }, [navigation]);
+    start();
+  }, [start]);
 
   return (
     <TouchableOpacity onPress={goToProfile}>
-      <Image
+      <Animated.Image
         source={{ uri: source }}
         style={[
           {
@@ -22,6 +28,7 @@ export const Avatar = React.memo(({ source, size, style }) => {
             alignSelf: 'center',
             marginRight: 24,
             borderRadius: 4,
+            transform: [{ rotateX: rotation, rotateY: rotation }],
           },
           style,
         ]}
