@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { ViewPropTypes, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { HeaderBackButton } from '@react-navigation/stack';
@@ -6,17 +6,20 @@ import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Animated from 'react-native-reanimated';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { ThemeContext } from '@context/ThemeContext';
 import { Text } from '../Text';
 import { Separator } from '../Separator';
 
 export const TopBar = ({
   title,
+  children,
   hasBackButton,
   hasBottomLine,
   fontSize,
   style,
 }) => {
   const navigation = useNavigation();
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Animated.View
@@ -24,15 +27,12 @@ export const TopBar = ({
         {
           width: '100%',
           height: 56,
-          backgroundColor: '#fff',
+          backgroundColor: theme.background,
           justifyContent: 'center',
         },
         style,
       ]}>
-      <View
-        style={{
-          flexDirection: 'row',
-        }}>
+      <View style={{ flexDirection: 'row' }}>
         {hasBackButton && (
           <HeaderBackButton
             onPress={navigation.goBack}
@@ -54,21 +54,26 @@ export const TopBar = ({
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          <Text
-            style={{
-              flex: 1,
-              fontSize: fontSize || new Animated.Value(24),
-              textAlign: 'center',
-            }}
-            fontWeight="700">
-            {title}
-          </Text>
+          {title && (
+            <Text
+              style={{
+                flex: 1,
+                fontSize,
+                textAlign: 'center',
+              }}
+              fontWeight="700">
+              {title}
+            </Text>
+          )}
+          {children}
           <TouchableOpacity
             hitSlop={{ top: 16, bottom: 16, left: 32, right: 16 }}
-            onPress={() => navigation.navigate('RepositorySearch')}>
+            onPress={() => navigation.navigate('Settings')}>
             <Icon
-              name="search"
-              size={16}
+              name="cog"
+              // name="search"
+              // size={16}
+              size={24}
               color="#4997d0"
               style={{ right: 16 }}
             />
@@ -89,7 +94,7 @@ export const TopBar = ({
 };
 
 TopBar.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   hasBackButton: PropTypes.bool,
   hasBottomLine: PropTypes.oneOfType([
     PropTypes.number,
@@ -103,6 +108,7 @@ TopBar.propTypes = {
 };
 
 TopBar.defaultProps = {
+  title: undefined,
   hasBackButton: false,
   hasBottomLine: 1,
   fontSize: 24,

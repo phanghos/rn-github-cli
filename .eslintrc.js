@@ -61,7 +61,7 @@ module.exports = {
         ],
         extensions: ['.js', '.jsx', '.json'],
       },
-      [path.resolve('customLintResolver.js')]: {},
+      [path.resolve('customLintResolver.js')]: { debug: false },
     },
   },
 };

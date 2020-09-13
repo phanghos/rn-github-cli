@@ -1,16 +1,15 @@
-import React from 'react';
-import { StyleSheet } from 'react-native';
+import React, { useContext } from 'react';
 import { SafeAreaView } from 'react-navigation';
+import { ThemeContext } from '@context/ThemeContext';
 
-export const withSafeArea = (Component, forceInset) => ({ ...props }) => (
-  <SafeAreaView style={styles.container} forceInset={forceInset}>
-    <Component {...props} />
-  </SafeAreaView>
-);
+export const withSafeArea = (Component, forceInset) => ({ ...props }) => {
+  const { theme } = useContext(ThemeContext);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
+  return (
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: theme.background }}
+      forceInset={forceInset}>
+      <Component {...props} />
+    </SafeAreaView>
+  );
+};
