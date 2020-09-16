@@ -22,11 +22,13 @@ export const Commit = ({
       {message}
     </Text>
     <View style={{ flexDirection: 'row' }}>
-      <Avatar
-        source={avatarUrl}
-        size={15}
-        style={{ marginRight: 6, borderRadius: 3 }}
-      />
+      {avatarUrl && (
+        <Avatar
+          source={avatarUrl}
+          size={15}
+          style={{ marginRight: 6, borderRadius: 3 }}
+        />
+      )}
       <Text fontWeight="500">
         {username}
         <Text style={{ color: '#696969', fontWeight: 'normal' }}>

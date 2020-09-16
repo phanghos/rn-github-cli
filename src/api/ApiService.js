@@ -8,16 +8,12 @@ const endpoints = {
   searchRepositories: 'search/repositories',
 };
 
-let axios;
+export const apiService = (function apiService() {
+  const axios = Axios.create({
+    baseURL: baseUrl,
+  });
 
-class ApiService {
-  constructor() {
-    axios = Axios.create({
-      baseURL: baseUrl,
-    });
-  }
-
-  requestAccessToken = (code, state) =>
+  const requestAccessToken = (code, state) =>
     Axios.post('https://github.com/login/oauth/access_token', {
       client_id: clientId,
       client_secret: clientSecret,
@@ -25,28 +21,39 @@ class ApiService {
       state,
     });
 
-  user = () =>
+  const user = () =>
     Axios.get('https://api.github.com/user', {
       headers: {
         Authorization: `token TOKEN`,
       },
     });
 
-  fetchUserRepositories = user =>
-    Axios.get(`${baseUrl}/users/${user}/repos`, { params: { type: 'all' } });
+  const fetchUserRepositories = username =>
+    Axios.get(`${baseUrl}/users/${username}/repos`, {
+      params: { type: 'all' },
+    });
 
-  fetchCommits = (user, repo) =>
-    Axios.get(`${baseUrl}/repos/${user}/${repo}/commits`);
+  const fetchCommits = (username, repo) =>
+    Axios.get(`${baseUrl}/repos/${username}/${repo}/commits`);
 
-  fetchPullRequests = (user, repo) =>
-    Axios.get(`${baseUrl}/repos/${user}/${repo}/pulls`);
+  const fetchPullRequests = (username, repo) =>
+    Axios.get(`${baseUrl}/repos/${username}/${repo}/pulls`);
 
-  searchRepositories = query =>
+  const searchRepositories = query =>
     axios.get(endpoints.searchRepositories, { params: { q: query } });
 
-  fetchPullRequest = url => Axios.get(url);
+  const fetchPullRequest = url => Axios.get(url);
 
-  fetchIssues = url => Axios.get(url);
-}
+  const fetchIssues = url => Axios.get(url);
 
-export const apiService = new ApiService();
+  return {
+    requestAccessToken,
+    user,
+    fetchUserRepositories,
+    fetchCommits,
+    fetchPullRequests,
+    searchRepositories,
+    fetchPullRequest,
+    fetchIssues,
+  };
+})();
